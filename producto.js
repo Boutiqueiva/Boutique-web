@@ -479,7 +479,7 @@ const productos = {
         precio: '$1,599',
         imagenes: [
             'src/imagenes/Tenis/Tenis19/55.svg',
-            '/src/imagenes/Tenis/Tenis19/57.svg',
+            'src/imagenes/Tenis/Tenis19/57.svg',
             'src/imagenes/Tenis/Tenis19/56.svg'
         ],
         descripcion: 'Jersey con estampado floral y estilo casual.',
@@ -551,9 +551,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis25/74.svg',
-            './src/imagenes/Tenis/Tenis25/76.svg',
-            './src/imagenes/Tenis/Tenis25/75.svg'
+            'src/imagenes/Tenis/Tenis25/74.svg',
+            'src/imagenes/Tenis/Tenis25/76.svg',
+            'src/imagenes/Tenis/Tenis25/75.svg'
         ],
         descripcion: 'Jersey con tecnología de compresión y soporte muscular.',
         tallas: ['S', 'M', 'L', 'XL']
