@@ -8,9 +8,9 @@ const productos = {
         categoria: 'Tenis mujer',
         precio: '$3,199',
         imagenes: [
-            './src/imagenes/Tenis/Tenis1/2.svg',
-            './src/imagenes/Tenis/Tenis1/1.svg',
-            './src/imagenes/Tenis/Tenis1/3.svg'
+            'src/imagenes/Tenis/Tenis1/2.svg',
+            'src/imagenes/Tenis/Tenis1/1.svg',
+            'src/imagenes/Tenis/Tenis1/3.svg'
         ],
         descripcion: 'Inspirado en el AJ1 original, el Air Jordan 1 Mid ofrece a los fans la oportunidad de seguir los pasos de MJ. El color flamante bordea los detalles de la zapatilla y la hace única.',
         tallas: ['CM 25', 'CM 25.5', 'CM 26', 'CM 26.5', 'CM 27', 'CM 27.5', 'CM 28', 'CM 28.5', 'CM 29', 'CM 29.5', 'CM 30', 'CM 30.5', 'CM 31']
@@ -20,9 +20,9 @@ const productos = {
         categoria: 'Playera Dri-FIT',
         precio: '$949',
         imagenes: [
-            './src/imagenes/Tenis/Tenis2/5.svg',
-            './src/imagenes/Tenis/Tenis2/4.svg',
-            './src/imagenes/Tenis/Tenis2/6.svg'
+            'src/imagenes/Tenis/Tenis2/5.svg',
+            'src/imagenes/Tenis/Tenis2/4.svg',
+            'src/imagenes/Tenis/Tenis2/6.svg'
         ],
         descripcion: 'La Playera Dri-FIT NikeCourt Victory está diseñada para mantenerte fresco y cómodo durante tus partidos más intensos. Su tecnología de secado rápido te ayuda a mantener la concentración en la cancha.',
         tallas: ['S', 'M', 'L', 'XL', 'XXL']
@@ -32,9 +32,9 @@ const productos = {
         categoria: 'Tenis hombre',
         precio: '$1,699',
         imagenes: [
-            './src/imagenes/Tenis/Tenis3/7.svg',
-            './src/imagenes/Tenis/Tenis3/8.svg',
-            './src/imagenes/Tenis/Tenis3/9.svg'
+            'src/imagenes/Tenis/Tenis3/7.svg',
+            'src/imagenes/Tenis/Tenis3/8.svg',
+            'src/imagenes/Tenis/Tenis3/9.svg'
         ],
         descripcion: 'Los Nike Court Lite 4 ofrecen un ajuste cómodo y durabilidad excepcional para jugadores que buscan rendimiento en la cancha. Su suela de goma proporciona tracción y estabilidad.',
         tallas: ['CM 25', 'CM 25.5', 'CM 26', 'CM 26.5', 'CM 27', 'CM 27.5', 'CM 28', 'CM 28.5', 'CM 29', 'CM 29.5', 'CM 30', 'CM 30.5', 'CM 31']
@@ -44,9 +44,9 @@ const productos = {
         categoria: 'Shorts',
         precio: '$1,899',
         imagenes: [
-            './src/imagenes/Tenis/Tenis4/10.svg',
-            './src/imagenes/Tenis/Tenis4/11.svg',
-            './src/imagenes/Tenis/Tenis4/12.svg'
+            'src/imagenes/Tenis/Tenis4/10.svg',
+            'src/imagenes/Tenis/Tenis4/11.svg',
+            'src/imagenes/Tenis/Tenis4/12.svg'
         ],
         descripcion: 'Los Shorts NikeCourt Slam están hechos con tejido ligero y transpirable que te mantiene fresco durante los partidos. Su corte ergonómico permite un movimiento libre y sin restricciones.',
         tallas: ['S', 'M', 'L', 'XL', 'XXL']
@@ -56,9 +56,9 @@ const productos = {
         categoria: 'Gorra, playera y pans',
         precio: '$549',
         imagenes: [
-            './src/imagenes/tenis/Tenis19/55.svg',
-            './src/imagenes/tenis/Tenis19/56.svg',
-            './src/imagenes/tenis/Tenis19/57.svg'
+            'src/imagenes/tenis/Tenis19/55.svg',
+            'src/imagenes/tenis/Tenis19/56.svg',
+            'src/imagenes/tenis/Tenis19/57.svg'
         ],
         descripcion: 'Este conjunto Adidas incluye una gorra, una playera y unos pants ideales para entrenamientos casuales o días de descanso. Combina estilo y comodidad en un solo paquete.',
         tallas: ['S', 'M', 'L', 'XL', 'XXL']
@@ -68,9 +68,9 @@ const productos = {
         categoria: 'Falda',
         precio: '$1,299',
         imagenes: [
-            './src/imagenes/Tenis/Tenis16/46.svg',
-            './src/imagenes/Tenis/Tenis16/47.svg',
-            './src/imagenes/Tenis/Tenis16/48.svg'
+            'src/imagenes/Tenis/Tenis16/46.svg',
+            'src/imagenes/Tenis/Tenis16/47.svg',
+            'src/imagenes/Tenis/Tenis16/48.svg'
         ],
         descripcion: 'La Falda NikeCourt Dry está diseñada para ofrecer libertad de movimiento y comodidad durante el juego. Su tejido transpirable y suave se adapta perfectamente a tu cuerpo.',
         tallas: ['S', 'M', 'L', 'XL', 'XXL']
@@ -80,9 +80,9 @@ const productos = {
         categoria: 'Entrenamiento',
         precio: '$2,100',
         imagenes: [
-            './src/imagenes/Tenis/Tenis25/74.svg',
-            './src/imagenes/Tenis/Tenis25/75.svg',
-            './src/imagenes/Tenis/Tenis25/76.svg'
+            'src/imagenes/Tenis/Tenis25/74.svg',
+            'src/imagenes/Tenis/Tenis25/75.svg',
+            'src/imagenes/Tenis/Tenis25/76.svg'
         ],
         descripcion: 'Las Nike Zoom Bella son ideales para entrenamientos de alta intensidad. Ofrecen amortiguación responsive y un ajuste seguro que te permite moverte con confianza.',
         tallas: ['CM 25', 'CM 25.5', 'CM 26', 'CM 26.5', 'CM 27', 'CM 27.5', 'CM 28', 'CM 28.5', 'CM 29', 'CM 29.5', 'CM 30', 'CM 30.5', 'CM 31']
@@ -92,9 +92,9 @@ const productos = {
         categoria: 'Polo',
         precio: '$1,499',
         imagenes: [
-            './src/imagenes/Tenis/Tenis27/80.svg',
-            './src/imagenes/Tenis/Tenis27/81.svg',
-            './src/imagenes/Tenis/Tenis27/82.svg'
+            'src/imagenes/Tenis/Tenis27/80.svg',
+            'src/imagenes/Tenis/Tenis27/81.svg',
+            'src/imagenes/Tenis/Tenis27/82.svg'
         ],
         descripcion: 'El Polo Advantage combina estilo clásico con tecnología moderna. Su tejido transpirable y su corte ajustado lo hacen perfecto para el campo de tenis o para ocasiones casuales.',
         tallas: ['S', 'M', 'L', 'XL', 'XXL']
@@ -104,9 +104,9 @@ const productos = {
         categoria: 'Tenis cancha dura',
         precio: '$3,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis21/61.svg',
-            './src/imagenes/Tenis/Tenis21/62.svg',
-            './src/imagenes/Tenis/Tenis21/63.svg'
+            'src/imagenes/Tenis/Tenis21/61.svg',
+            'src/imagenes/Tenis/Tenis21/62.svg',
+            'src/imagenes/Tenis/Tenis21/63.svg'
         ],
         descripcion: 'Los GP Turbo están diseñados específicamente para canchas duras. Ofrecen una excelente amortiguación y tracción, protegiendo tus pies durante los partidos más exigentes.',
         tallas: ['CM 25', 'CM 25.5', 'CM 26', 'CM 26.5', 'CM 27', 'CM 27.5', 'CM 28', 'CM 28.5', 'CM 29', 'CM 29.5', 'CM 30', 'CM 30.5', 'CM 31']
@@ -116,9 +116,9 @@ const productos = {
         categoria: 'Capa base',
         precio: '$849',
         imagenes: [
-            './src/imagenes/Tenis/Tenis18/52.svg',
-            './src/imagenes/Tenis/Tenis18/53.svg',
-            './src/imagenes/Tenis/Tenis18/54.svg'
+            'src/imagenes/Tenis/Tenis18/52.svg',
+            'src/imagenes/Tenis/Tenis18/53.svg',
+            'src/imagenes/Tenis/Tenis18/54.svg'
         ],
         descripcion: 'La Capa Base Nike Pro es esencial para cualquier atleta. Su tejido de secado rápido y su ajuste ceñido ayudan a regular la temperatura corporal y a mantener la piel seca durante el ejercicio.',
         tallas: ['S', 'M', 'L', 'XL', 'XXL']
@@ -130,8 +130,8 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Playera/Carhartt/17.svg',
-            './src/imagenes/Ropa/Playera/Carhartt/18.svg',
+            'src/imagenes/Ropa/Playera/Carhartt/17.svg',
+            'src/imagenes/Ropa/Playera/Carhartt/18.svg',
         ],
         descripcion: 'Jersey cómodo y transpirable para uso diario. Ideal para entrenamientos o salidas casuales.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -141,9 +141,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis1/2.svg',
-            './src/imagenes/Tenis/Tenis1/1.svg',
-            './src/imagenes/Tenis/Tenis1/3.svg'
+            'src/imagenes/Tenis/Tenis1/2.svg',
+            'src/imagenes/Tenis/Tenis1/1.svg',
+            'src/imagenes/Tenis/Tenis1/3.svg'
         ],
         descripcion: 'Jersey deportivo con diseño moderno y tejido ligero.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -153,8 +153,8 @@ const productos = {
         categoria: 'Pantalón mezclilla',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 1/4.svg',
-            './src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 1/3.svg',
+            'src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 1/4.svg',
+            'src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 1/3.svg',
         ],
         descripcion: 'Pantalón de mezclilla duradero y con ajuste moderno.',
         tallas: ['28', '30', '32', '34']
@@ -164,9 +164,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis2/5.svg',
-            './src/imagenes/Tenis/Tenis2/4.svg',
-            './src/imagenes/Tenis/Tenis2/6.svg'
+            'src/imagenes/Tenis/Tenis2/5.svg',
+            'src/imagenes/Tenis/Tenis2/4.svg',
+            'src/imagenes/Tenis/Tenis2/6.svg'
         ],
         descripcion: 'Jersey versátil para cualquier ocasión deportiva.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -176,8 +176,8 @@ const productos = {
         categoria: 'Conjunto deportivo',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Pans/Champions/2.svg',
-            './src/imagenes/Ropa/Pans/Champions/1.svg'
+            'src/imagenes/Ropa/Pans/Champions/2.svg',
+            'src/imagenes/Ropa/Pans/Champions/1.svg'
         ],
         descripcion: 'Conjunto completo de pans para entrenamiento o descanso.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -187,9 +187,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis3/7.svg',
-            './src/imagenes/Tenis/Tenis3/8.svg',
-            './src/imagenes/Tenis/Tenis3/9.svg'
+            'src/imagenes/Tenis/Tenis3/7.svg',
+            'src/imagenes/Tenis/Tenis3/8.svg',
+            'src/imagenes/Tenis/Tenis3/9.svg'
         ],
         descripcion: 'Jersey con estilo urbano y comodidad extrema.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -199,9 +199,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis4/10.svg',
-            './src/imagenes/Tenis/Tenis4/11.svg',
-            './src/imagenes/Tenis/Tenis4/12.svg'
+            'src/imagenes/Tenis/Tenis4/10.svg',
+            'src/imagenes/Tenis/Tenis4/11.svg',
+            'src/imagenes/Tenis/Tenis4/12.svg'
         ],
         descripcion: 'Jersey premium con acabados de alta calidad.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -211,8 +211,8 @@ const productos = {
         categoria: 'Falda deportiva',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 2/6.svg',
-            './src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 2/5.svg',
+            'src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 2/6.svg',
+            'src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 2/5.svg',
         ],
         descripcion: 'Falda deportiva con diseño moderno y tejido transpirable.',
         tallas: ['S', 'M', 'L']
@@ -222,8 +222,8 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Playera/DKNY/19.svg',
-            './src/imagenes/Ropa/Playera/DKNY/20.svg'
+            'src/imagenes/Ropa/Playera/DKNY/19.svg',
+            'src/imagenes/Ropa/Playera/DKNY/20.svg'
         ],
         descripcion: 'Jersey colaboración con DKNY, estilo único y confortable.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -233,9 +233,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis5/15.svg',
-            './src/imagenes/Tenis/Tenis5/13.svg',
-            './src/imagenes/Tenis/Tenis5/14.svg'
+            'src/imagenes/Tenis/Tenis5/15.svg',
+            'src/imagenes/Tenis/Tenis5/13.svg',
+            'src/imagenes/Tenis/Tenis5/14.svg'
         ],
         descripcion: 'Jersey con gráficos llamativos y tejido suave.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -245,8 +245,8 @@ const productos = {
         categoria: 'Pantalón vestir',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Pantalon vestir/Negro/13.svg',
-            './src/imagenes/Ropa/Pantalon vestir/Negro/14.svg'
+            'src/imagenes/Ropa/Pantalon vestir/Negro/13.svg',
+            'src/imagenes/Ropa/Pantalon vestir/Negro/14.svg'
         ],
         descripcion: 'Pantalón formal en color negro, perfecto para eventos.',
         tallas: ['28', '30', '32', '34']
@@ -256,9 +256,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis6/18.svg',
-            './src/imagenes/Tenis/Tenis6/16.svg',
-            './src/imagenes/Tenis/Tenis6/17.svg'
+            'src/imagenes/Tenis/Tenis6/18.svg',
+            'src/imagenes/Tenis/Tenis6/16.svg',
+            'src/imagenes/Tenis/Tenis6/17.svg'
         ],
         descripcion: 'Jersey con diseño minimalista y máxima comodidad.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -268,8 +268,8 @@ const productos = {
         categoria: 'Pantalón mezclilla',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 3/8.svg',
-            './src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 3/7.svg'
+            'src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 3/8.svg',
+            'src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 3/7.svg'
         ],
         descripcion: 'Pantalón de mezclilla con corte recto y tela resistente.',
         tallas: ['28', '30', '32', '34']
@@ -279,8 +279,8 @@ const productos = {
         categoria: 'Short negro',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Short/Nike/Negro/25.svg',
-            './src/imagenes/Ropa/Short/Nike/Negro/24.svg'
+            'src/imagenes/Ropa/Short/Nike/Negro/25.svg',
+            'src/imagenes/Ropa/Short/Nike/Negro/24.svg'
         ],
         descripcion: 'Short deportivo en color negro clásico, ideal para cualquier actividad.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -290,9 +290,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis7/19.svg',
-            './src/imagenes/Tenis/Tenis7/20.svg',
-            './src/imagenes/Tenis/Tenis7/21.svg'
+            'src/imagenes/Tenis/Tenis7/19.svg',
+            'src/imagenes/Tenis/Tenis7/20.svg',
+            'src/imagenes/Tenis/Tenis7/21.svg'
         ],
         descripcion: 'Jersey con estampado exclusivo y tejido transpirable.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -302,8 +302,8 @@ const productos = {
         categoria: 'Pantalón vestir',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Pantalon vestir/CK/11.svg',
-            './src/imagenes/Ropa/Pantalon vestir/CK/12.svg'
+            'src/imagenes/Ropa/Pantalon vestir/CK/11.svg',
+            'src/imagenes/Ropa/Pantalon vestir/CK/12.svg'
         ],
         descripcion: 'Pantalón de vestir colaboración con Calvin Klein.',
         tallas: ['28', '30', '32', '34']
@@ -313,8 +313,8 @@ const productos = {
         categoria: 'Pantalón mezclilla',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 4/10.svg',
-            './src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 4/9.svg'
+            'src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 4/10.svg',
+            'src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 4/9.svg'
         ],
         descripcion: 'Pantalón de mezclilla con lavado vintage y ajuste moderno.',
         tallas: ['28', '30', '32', '34']
@@ -324,8 +324,8 @@ const productos = {
         categoria: 'Short azul',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Short/Lululemon/Azul/29.svg',
-            './src/imagenes/Ropa/Short/Lululemon/Azul/28.svg'
+            'src/imagenes/Ropa/Short/Lululemon/Azul/29.svg',
+            'src/imagenes/Ropa/Short/Lululemon/Azul/28.svg'
         ],
         descripcion: 'Short deportivo en tono azul intenso, perfecto para el verano.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -335,9 +335,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis8/23.svg',
-            './src/imagenes/Tenis/Tenis8/22.svg',
-            './src/imagenes/Tenis/Tenis8/24.svg'
+            'src/imagenes/Tenis/Tenis8/23.svg',
+            'src/imagenes/Tenis/Tenis8/22.svg',
+            'src/imagenes/Tenis/Tenis8/24.svg'
         ],
         descripcion: 'Jersey con cuello redondo y diseño limpio.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -347,9 +347,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis9/27.svg',
-            './src/imagenes/Tenis/Tenis9/26.svg',
-            './src/imagenes/Tenis/Tenis9/25.svg'
+            'src/imagenes/Tenis/Tenis9/27.svg',
+            'src/imagenes/Tenis/Tenis9/26.svg',
+            'src/imagenes/Tenis/Tenis9/25.svg'
         ],
         descripcion: 'Jersey con mangas cortas y tejido ultraligero.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -359,8 +359,8 @@ const productos = {
         categoria: 'Pantalón vestir',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Pantalon vestir/Tommy/15.svg',
-            './src/imagenes/Ropa/Pantalon vestir/Tommy/16.svg'
+            'src/imagenes/Ropa/Pantalon vestir/Tommy/15.svg',
+            'src/imagenes/Ropa/Pantalon vestir/Tommy/16.svg'
         ],
         descripcion: 'Pantalón de vestir colaboración con Tommy Hilfiger.',
         tallas: ['28', '30', '32', '34']
@@ -370,9 +370,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis10/30.svg',
-            './src/imagenes/Tenis/Tenis10/28.svg',
-            './src/imagenes/Tenis/Tenis10/29.svg'
+            'src/imagenes/Tenis/Tenis10/30.svg',
+            'src/imagenes/Tenis/Tenis10/28.svg',
+            'src/imagenes/Tenis/Tenis10/29.svg'
         ],
         descripcion: 'Jersey con logo bordado y acabados premium.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -382,9 +382,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis11/31.svg',
-            './src/imagenes/Tenis/Tenis11/32.svg',
-            './src/imagenes/Tenis/Tenis11/33.svg'
+            'src/imagenes/Tenis/Tenis11/31.svg',
+            'src/imagenes/Tenis/Tenis11/32.svg',
+            'src/imagenes/Tenis/Tenis11/33.svg'
         ],
         descripcion: 'Jersey con diseño deportivo y colores vibrantes.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -394,9 +394,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis12/34.svg',
-            './src/imagenes/Tenis/Tenis12/36.svg',
-            './src/imagenes/Tenis/Tenis12/35.svg'
+            'src/imagenes/Tenis/Tenis12/34.svg',
+            'src/imagenes/Tenis/Tenis12/36.svg',
+            'src/imagenes/Tenis/Tenis12/35.svg'
         ],
         descripcion: 'Jersey con corte regular y tejido suave al tacto.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -406,9 +406,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis13/38.svg',
-            './src/imagenes/Tenis/Tenis13/39.svg',
-            './src/imagenes/Tenis/Tenis13/37.svg'
+            'src/imagenes/Tenis/Tenis13/38.svg',
+            'src/imagenes/Tenis/Tenis13/39.svg',
+            'src/imagenes/Tenis/Tenis13/37.svg'
         ],
         descripcion: 'Jersey con estampado gráfico y diseño urbano.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -418,9 +418,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis14/40.svg',
-            './src/imagenes/Tenis/Tenis14/42.svg',
-            './src/imagenes/Tenis/Tenis14/41.svg'
+            'src/imagenes/Tenis/Tenis14/40.svg',
+            'src/imagenes/Tenis/Tenis14/42.svg',
+            'src/imagenes/Tenis/Tenis14/41.svg'
         ],
         descripcion: 'Jersey con inspiración retro y materiales modernos.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -430,9 +430,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis15/43.svg',
-            './src/imagenes/Tenis/Tenis15/45.svg',
-            './src/imagenes/Tenis/Tenis15/44.svg'
+            'src/imagenes/Tenis/Tenis15/43.svg',
+            'src/imagenes/Tenis/Tenis15/45.svg',
+            'src/imagenes/Tenis/Tenis15/44.svg'
         ],
         descripcion: 'Jersey con cuello en V y diseño elegante.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -442,9 +442,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis16/46.svg',
-            './src/imagenes/Tenis/Tenis16/48.svg',
-            './src/imagenes/Tenis/Tenis16/47.svg'
+            'src/imagenes/Tenis/Tenis16/46.svg',
+            'src/imagenes/Tenis/Tenis16/48.svg',
+            'src/imagenes/Tenis/Tenis16/47.svg'
         ],
         descripcion: 'Jersey con tecnología Dri-FIT para mantenerte seco.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -454,9 +454,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis17/49.svg',
-            './src/imagenes/Tenis/Tenis17/51.svg',
-            './src/imagenes/Tenis/Tenis17/50.svg'
+            'src/imagenes/Tenis/Tenis17/49.svg',
+            'src/imagenes/Tenis/Tenis17/51.svg',
+            'src/imagenes/Tenis/Tenis17/50.svg'
         ],
         descripcion: 'Jersey con diseño minimalista y colores neutros.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -466,9 +466,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis18/52.svg',
-            './src/imagenes/Tenis/Tenis18/54.svg',
-            './src/imagenes/Tenis/Tenis18/53.svg'
+            'src/imagenes/Tenis/Tenis18/52.svg',
+            'src/imagenes/Tenis/Tenis18/54.svg',
+            'src/imagenes/Tenis/Tenis18/53.svg'
         ],
         descripcion: 'Jersey con logo pequeño y corte clásico.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -478,9 +478,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis19/55.svg',
-            './src/imagenes/Tenis/Tenis19/57.svg',
-            './src/imagenes/Tenis/Tenis19/56.svg'
+            'src/imagenes/Tenis/Tenis19/55.svg',
+            '/src/imagenes/Tenis/Tenis19/57.svg',
+            'src/imagenes/Tenis/Tenis19/56.svg'
         ],
         descripcion: 'Jersey con estampado floral y estilo casual.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -490,9 +490,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis20/58.svg',
-            './src/imagenes/Tenis/Tenis20/60.svg',
-            './src/imagenes/Tenis/Tenis20/59.svg'
+            'src/imagenes/Tenis/Tenis20/58.svg',
+            'src/imagenes/Tenis/Tenis20/60.svg',
+            'src/imagenes/Tenis/Tenis20/59.svg'
         ],
         descripcion: 'Jersey con rayas laterales y diseño deportivo.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -502,9 +502,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis21/61.svg',
-            './src/imagenes/Tenis/Tenis21/63.svg',
-            './src/imagenes/Tenis/Tenis21/62.svg'
+            'src/imagenes/Tenis/Tenis21/61.svg',
+            'src/imagenes/Tenis/Tenis21/63.svg',
+            'src/imagenes/Tenis/Tenis21/62.svg'
         ],
         descripcion: 'Jersey con inspiración en básquetbol y tejido resistente.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -514,9 +514,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis22/66.svg',
-            './src/imagenes/Tenis/Tenis22/64.svg',
-            './src/imagenes/Tenis/Tenis22/65.svg'
+            'src/imagenes/Tenis/Tenis22/66.svg',
+            'src/imagenes/Tenis/Tenis22/64.svg',
+            'src/imagenes/Tenis/Tenis22/65.svg'
         ],
         descripcion: 'Jersey con diseño técnico y máximo rendimiento.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -526,10 +526,10 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis23/69.svg',
-            './src/imagenes/Tenis/Tenis23/70.svg',
-            './src/imagenes/Tenis/Tenis23/68svg',
-            './src/imagenes/Tenis/Tenis23/67.svg'
+            'src/imagenes/Tenis/Tenis23/69.svg',
+            'src/imagenes/Tenis/Tenis23/70.svg',
+            'src/imagenes/Tenis/Tenis23/68svg',
+            'src/imagenes/Tenis/Tenis23/67.svg'
         ],
         descripcion: 'Jersey con corte holgado y estilo streetwear.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -539,9 +539,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis24/73.svg',
-            './src/imagenes/Tenis/Tenis24/71.svg',
-            './src/imagenes/Tenis/Tenis24/72.svg'
+            'src/imagenes/Tenis/Tenis24/73.svg',
+            'src/imagenes/Tenis/Tenis24/71.svg',
+            'src/imagenes/Tenis/Tenis24/72.svg'
         ],
         descripcion: 'Jersey con estampado geométrico y colores modernos.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -563,9 +563,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis26/79.svg',
-            './src/imagenes/Tenis/Tenis26/77.svg',
-            './src/imagenes/Tenis/Tenis26/78.svg'
+            'src/imagenes/Tenis/Tenis26/79.svg',
+            'src/imagenes/Tenis/Tenis26/77.svg',
+            'src/imagenes/Tenis/Tenis26/78.svg'
         ],
         descripcion: 'Jersey con diseño aerodinámico para alto rendimiento.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -575,9 +575,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Tenis/Tenis27/80.svg',
-            './src/imagenes/Tenis/Tenis27/81.svg',
-            './src/imagenes/Tenis/Tenis27/82.svg'
+            'src/imagenes/Tenis/Tenis27/80.svg',
+            'src/imagenes/Tenis/Tenis27/81.svg',
+            'src/imagenes/Tenis/Tenis27/82.svg'
         ],
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -587,8 +587,8 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Conjuntos/3/26.svg',
-            './src/imagenes/Ropa/Playera/Tommy/Polo/17.svg'
+            'src/imagenes/Ropa/Conjuntos/3/26.svg',
+            'src/imagenes/Ropa/Playera/Tommy/Polo/17.svg'
         ],
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -598,8 +598,8 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 5/1.svg',
-            './src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 5/2.svg'
+            'src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 5/1.svg',
+            'src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 5/2.svg'
         ],
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -609,8 +609,8 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 6/3.svg',
-            './src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 6/4.svg'
+            'src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 6/3.svg',
+            'src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 6/4.svg'
         ],
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -620,8 +620,8 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 7/5.svg',
-            './src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 7/6.svg'
+            'src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 7/5.svg',
+            'src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 7/6.svg'
         ],
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -631,8 +631,8 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Pantalon vestir/Gris/7.svg',
-            './src/imagenes/Ropa/Pantalon vestir/Gris/8.svg'
+            'src/imagenes/Ropa/Pantalon vestir/Gris/7.svg',
+            'src/imagenes/Ropa/Pantalon vestir/Gris/8.svg'
         ],
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -642,8 +642,8 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Jersey/21.svg',
-            './src/imagenes/Ropa/Jersey/22.svg'
+            'src/imagenes/Ropa/Jersey/21.svg',
+            'src/imagenes/Ropa/Jersey/22.svg'
         ],
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -653,8 +653,8 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Jersey/Rojo/24.svg',
-            './src/imagenes/Ropa/Jersey/Rojo/23.svg'
+            'src/imagenes/Ropa/Jersey/Rojo/24.svg',
+            'src/imagenes/Ropa/Jersey/Rojo/23.svg'
         ],
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -664,7 +664,7 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Playera/Tipo Polo/11.svg',
+            'src/imagenes/Ropa/Playera/Tipo Polo/11.svg',
         ],
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
         tallas: ['S', 'M', 'L', 'XL']
@@ -674,9 +674,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Playera/Tipo Polo/Ralph/13.svg',
-            './src/imagenes/Ropa/Playera/Tipo Polo/Ralph/14.svg',
-            './src/imagenes/Ropa/Playera/Tipo Polo/Ralph/12.svg'
+            'src/imagenes/Ropa/Playera/Tipo Polo/Ralph/13.svg',
+            'src/imagenes/Ropa/Playera/Tipo Polo/Ralph/14.svg',
+            'src/imagenes/Ropa/Playera/Tipo Polo/Ralph/12.svg'
             
         ],
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
@@ -687,9 +687,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Playera/Vans/20.svg',
-            './src/imagenes/Ropa/Playera/Vans/18.svg',
-            './src/imagenes/Ropa/Playera/Vans/19.svg'
+            'src/imagenes/Ropa/Playera/Vans/20.svg',
+            'src/imagenes/Ropa/Playera/Vans/18.svg',
+            'src/imagenes/Ropa/Playera/Vans/19.svg'
             
         ],
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
@@ -700,9 +700,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Playera/Tommy/Polo/17.svg',
-            './src/imagenes/Ropa/Playera/Tommy/Polo/16.svg',
-            './src/imagenes/Ropa/Playera/Tommy/Polo/15.svg'
+            'src/imagenes/Ropa/Playera/Tommy/Polo/17.svg',
+            'src/imagenes/Ropa/Playera/Tommy/Polo/16.svg',
+            'src/imagenes/Ropa/Playera/Tommy/Polo/15.svg'
             
         ],
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
@@ -713,9 +713,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Conjuntos/5/28.svg',
-            './src/imagenes/Ropa/Playera/Tipo Polo/Ralph/13.svg',
-            './src/imagenes/Ropa/Pantalon vestir/Tommy/15.svg'
+            'src/imagenes/Ropa/Conjuntos/5/28.svg',
+            'src/imagenes/Ropa/Playera/Tipo Polo/Ralph/13.svg',
+            'src/imagenes/Ropa/Pantalon vestir/Tommy/15.svg'
             
         ],
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
@@ -726,9 +726,9 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Conjuntos/4/27.svg',
-            './src/imagenes/Ropa/Playera/Tipo Polo/Ralph/13.svg',
-            './src/imagenes/Ropa/Pantalon vestir/Gris/7.svg'
+            'src/imagenes/Ropa/Conjuntos/4/27.svg',
+            'src/imagenes/Ropa/Playera/Tipo Polo/Ralph/13.svg',
+            'src/imagenes/Ropa/Pantalon vestir/Gris/7.svg'
             
         ],
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
@@ -739,8 +739,8 @@ const productos = {
         categoria: 'Jersey para hombre',
         precio: '$1,599',
         imagenes: [
-            './src/imagenes/Ropa/Playera/Carhartt/Roja/10.svg',
-            './src/imagenes/Ropa/Playera/Carhartt/Roja/9.svg'            
+            'src/imagenes/Ropa/Playera/Carhartt/Roja/10.svg',
+            'src/imagenes/Ropa/Playera/Carhartt/Roja/9.svg'            
         ],
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
         tallas: ['S', 'M', 'L', 'XL']
