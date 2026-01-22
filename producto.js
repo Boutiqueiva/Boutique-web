@@ -51,18 +51,6 @@ const productos = {
         descripcion: 'Los Shorts NikeCourt Slam están hechos con tejido ligero y transpirable que te mantiene fresco durante los partidos. Su corte ergonómico permite un movimiento libre y sin restricciones.',
         tallas: ['S', 'M', 'L', 'XL', 'XXL']
     },
-    'conjunto-adidas': {
-        nombre: 'Conjunto Adidas',
-        categoria: 'Gorra, playera y pans',
-        precio: '$549',
-        imagenes: [
-            'src/imagenes/tenis/Tenis12/34.svg',
-            'src/imagenes/tenis/Tenis12/35.svg',
-            'src/imagenes/tenis/Tenis12/36.svg'
-        ],
-        descripcion: 'Este conjunto Adidas incluye una gorra, una playera y unos pants ideales para entrenamientos casuales o días de descanso. Combina estilo y comodidad en un solo paquete.',
-        tallas: ['S', 'M', 'L', 'XL', 'XXL']
-    },
     'nikecourt-dry': {
         nombre: 'NikeCourt Dry',
         categoria: 'Falda',
@@ -876,5 +864,6 @@ function initPage() {
         document.body.innerHTML = '<h1>Error</h1><p>No se especificó ningún producto.</p>';
     }
 }
+
 
 document.addEventListener('DOMContentLoaded', initPage);
