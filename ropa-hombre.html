@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa para Hombre - Nike Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ropa-hombre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="main-header" id="smartHeader">
+        <nav class="navbar container-limit">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Lo Nuevo</a></li>
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Niños</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">SNKRS</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Buscar">
+                </div>
+                <i class="fa-regular fa-heart icon-btn"></i>
+                <i class="fa-solid fa-bag-shopping icon-btn"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="category-page">
+        <div class="container-limit">
+            <div class="category-header">
+                <h1 id="category-title">Ropa para Hombre (<span id="product-count">0</span>)</h1>
+                <div class="category-actions">
+                    <button class="filter-btn">Ocultar filtros</button>
+                    <div class="sort-dropdown">
+                        <span>Ordenar por ▾</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filtros Laterales -->
+            <div class="category-content">
+                <aside class="filters-sidebar">
+                    <div class="filter-group">
+                        <h3>Playeras y tops</h3>
+                        <ul class="filter-list">
+                            <li><button class="filter-btn-item" data-filter="all">Todos</button></li>
+                            <li><button class="filter-btn-item" data-filter="jersey">Jerseys</button></li>
+                            <li><button class="filter-btn-item" data-filter="pantalon-mezclilla">Pantalones
+                                    mezclilla</button></li>
+                            <li><button class="filter-btn-item" data-filter="pantalon-vestir">Pantalones vestir</button>
+                            </li>
+                            <li><button class="filter-btn-item" data-filter="shorts">Shorts</button></li>
+                            <li><button class="filter-btn-item" data-filter="conjunto">Conjuntos</button></li>
+                            <li><button class="filter-btn-item" data-filter="playera">Playeras</button></li>
+                            <li><button class="filter-btn-item" data-filter="faldas">Faldas</button></li>
+                            <li><button class="filter-btn-item" data-filter="tenis">Tenis</button></li>
+                            <li><button class="filter-btn-item" data-filter="pans">Pans</button></li>
+                            <li><button class="filter-btn-item" data-filter="otros">Otros</button></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Género</h3>
+                        <select class="filter-select" data-filter-type="gender">
+                            <option value="all">Todos</option>
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Niños</h3>
+                        <select class="filter-select" data-filter-type="kids">
+                            <option value="all">Todos</option>
+                            <option value="si">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Talla</h3>
+                        <select class="filter-select" data-filter-type="size">
+                            <option value="all">Todas</option>
+                            <option value="cm25">CM 25</option>
+                            <option value="cm25.5">CM 25.5</option>
+                            <option value="cm26">CM 26</option>
+                            <!-- Agrega más si lo deseas -->
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Color</h3>
+                        <select class="filter-select" data-filter-type="color">
+                            <option value="all">Todos</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="negro">Negro</option>
+                            <option value="rojo">Rojo</option>
+                            <option value="azul">Azul</option>
+                        </select>
+                    </div>
+                </aside>
+
+                <!-- Productos -->
+                <section class="products-grid">
+                    <a href="producto.html?id=nike-air-jersey-1" class="product-link">
+                        <div class="product-card" data-category="playera">
+                            <img src="./src/imagenes/Ropa/Playera/Carhartt/17.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-2" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis1/2.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-pantalon-1" class="product-link">
+                        <div class="product-card" data-category="pantalon-mezclilla">
+                            <img src="./src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 1/4.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Pantalón mezclilla</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-3" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis2/5.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-conjunto-1" class="product-link">
+                        <div class="product-card" data-category="pans">
+                            <img src="./src/imagenes/Ropa/Pans/Champions/2.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Conjunto deportivo</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-4" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis3/7.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-5" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis4/10.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-falda-1" class="product-link">
+                        <div class="product-card" data-category="pantalon-mezclilla">
+                            <img src="./src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 2/6.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Falda deportiva</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-6" class="product-link">
+                        <div class="product-card" data-category="playera">
+                            <img src="./src/imagenes/Ropa/Playera/DKNY/19.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-7" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis5/15.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-pantalon-2" class="product-link">
+                        <div class="product-card" data-category="pantalon-vestir">
+                            <img src="./src/imagenes/Ropa/Pantalon vestir/Negro/13.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Pantalón vestir</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-8" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis6/18.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-pantalon-3" class="product-link">
+                        <div class="product-card" data-category="pantalon-mezclilla">
+                            <img src="./src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 3/8.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Pantalón mezclilla</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-short-negro" class="product-link">
+                        <div class="product-card" data-category="shorts">
+                            <img src="./src/imagenes/Ropa/Short/Nike/Negro/25.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Short negro</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-9" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis7/19.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-pantalon-4" class="product-link">
+                        <div class="product-card" data-category="pantalon-vestir">
+                            <img src="./src/imagenes/Ropa/Pantalon vestir/CK/11.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Pantalón vestir</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-pantalon-5" class="product-link">
+                        <div class="product-card" data-category="pantalon-mezclilla">
+                            <img src="./src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 4/10.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Pantalón mezclilla</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-short-azul" class="product-link">
+                        <div class="product-card" data-category="shorts">
+                            <img src="./src/imagenes/Ropa/Short/Lululemon/Azul/29.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Short azul</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-10" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis8/23.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                     <a href="producto.html?id=playera-char-roja" class="product-link">
+                        <div class="product-card" data-category="playera">
+                            <img src="./src/imagenes/Ropa/Playera/Carhartt/Roja/10.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-11" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis9/27.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-pantalon-6" class="product-link">
+                        <div class="product-card" data-category="pantalon-vestir">
+                            <img src="./src/imagenes/Ropa/Pantalon vestir/Tommy/15.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Pantalón vestir</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-12" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis10/30.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=jersey-tnunders" class="product-link">
+                        <div class="product-card" data-category="jersey">
+                            <img src="./src/imagenes/Ropa/Jersey/Rojo/24.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-13" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis11/31.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-14" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis12/34.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-15" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis13/38.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-16" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis14/40.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-17" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis15/43.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=conjunto-tommy" class="product-link">
+                        <div class="product-card" data-category="conjunto">
+                            <img src="./src/imagenes/Ropa/Conjuntos/5/28.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-18" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis16/46.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-19" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis17/49.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-20" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis18/52.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-21" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis19/55.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-22" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis20/58.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=playera-ralph" class="product-link">
+                        <div class="product-card" data-category="playera">
+                            <img src="./src/imagenes/Ropa/Playera/Tipo Polo/Ralph/13.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-23" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis21/61.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-24" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis22/66.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-25" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis23/69.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=pantalon-mezclilla-6" class="product-link">
+                        <div class="product-card" data-category="pantalon-mezclilla">
+                            <img src="./src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 6/3.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-26" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis24/73.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=pantalon-mezclilla-5" class="product-link">
+                        <div class="product-card" data-category="pantalon-mezclilla">
+                            <img src="./src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 5/1.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-27" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis25/74.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-conjunto-3" class="product-link">
+                        <div class="product-card" data-category="conjunto">
+                            <img src="./src/imagenes/Ropa/Conjuntos/3/26.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-28" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis26/79.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=pantalon-mezclilla-7" class="product-link">
+                        <div class="product-card" data-category="pantalon-mezclilla">
+                            <img src="./src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 7/5.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-air-jersey-29" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="./src/imagenes/Tenis/Tenis27/80.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a href="producto.html?id=pantalon-vestir-gris" class="product-link">
+                        <div class="product-card" data-category="pantalon-vestir">
+                            <img src="./src/imagenes/Ropa/Pantalon vestir/Gris/7.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=jersey-oklahoma" class="product-link">
+                        <div class="product-card" data-category="jersey">
+                            <img src="./src/imagenes/Ropa/Jersey/21.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=playera-tipo-polo" class="product-link">
+                        <div class="product-card" data-category="playera">
+                            <img src="./src/imagenes/Ropa/Playera/Tipo Polo/11.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=playera-vans" class="product-link">
+                        <div class="product-card" data-category="playera">
+                            <img src="./src/imagenes/Ropa/Playera/Vans/20.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=playera-tommy-polo" class="product-link">
+                        <div class="product-card" data-category="playera">
+                            <img src="./src/imagenes/Ropa/Playera/Tommy/Polo/17.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=conjunto-4" class="product-link">
+                        <div class="product-card" data-category="conjunto">
+                            <img src="./src/imagenes/Ropa/Conjuntos/4/27.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air</h4>
+                                <p>Jersey para hombre</p>
+                                <p class="p-price">$1,599</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-limit">
+            <div class="footer-bottom">
+                <p>© 2026 Boutique, NLZ. Todos los derechos reservados</p>
+                <div class="footer-menu">
+                    <div class="dropdown">
+                        <span>Guías ▾</span>
+                    </div>
+                    <a href="#">Términos de Uso</a>
+                    <a href="#">Términos de Venta</a>
+                    <a href="#">Detalles de la Empresa</a>
+                    <a href="#">Política de Privacidad y Cookies</a>
+                    <a href="#">Configuración de Privacidad y Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ropa-hombre.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const productCards = document.querySelectorAll('.product-card');
+            const filterButtons = document.querySelectorAll('.filter-btn-item');
+            const productCountElement = document.getElementById('product-count');
+
+            // Función para actualizar el contador
+            function updateProductCount(count) {
+                productCountElement.textContent = count;
+            }
+
+            // Función para filtrar productos
+            function filterProducts(category) {
+                let visibleCount = 0;
+
+                productCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.closest('.product-link').style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        card.closest('.product-link').style.display = 'none';
+                    }
+                });
+
+                updateProductCount(visibleCount);
+            }
+
+            // Evento para los botones de filtro
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const filterValue = this.dataset.filter;
+                    filterProducts(filterValue);
+                });
+            });
+
+            // Inicializar con todos los productos visibles
+            filterProducts('all');
+        });
+    </script>
+</body>
+
+</html>

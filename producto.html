@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - Nike Clone</title>
+    <!-- Enlaces a tus estilos globales (opcional, si quieres mantener el header) -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Estilos específicos para la página de producto -->
+    <link rel="stylesheet" href="producto.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header (opcional, puedes copiarlo desde index.html o dejarlo vacío) -->
+    <header class="main-header" id="smartHeader">
+        <nav class="navbar container-limit">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Lo Nuevo</a></li>
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Niños</a></li>
+                <li><a href="#">Ofertas</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Buscar">
+                </div>
+                <i class="fa-regular fa-heart icon-btn"></i>
+                <i class="fa-solid fa-bag-shopping icon-btn"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal de la Página de Producto -->
+    <main class="product-page">
+        <div class="container-limit">
+            <!-- Botón de retroceso (opcional) -->
+            <div class="back-button">
+                <a href="javascript:history.back()"><i class="fas fa-arrow-left"></i> Volver</a>
+            </div>
+
+            <!-- Sección de Imágenes y Detalles -->
+            <div class="product-detail-section">
+                <!-- Miniaturas -->
+                <div class="thumbnail-gallery" id="thumbnailGallery">
+                    <!-- Las miniaturas se cargarán dinámicamente con JS -->
+                </div>
+
+                <!-- Imagen Principal -->
+                <div class="main-image-container" id="mainImageContainer">
+                    <img id="mainProductImage" src="" alt="Imagen del producto">
+                    <div class="image-label" id="imageLabel">Altamente valorado</div>
+                    <!-- Botones de navegación de imagen -->
+                    <div class="image-nav-buttons">
+                        <button class="nav-btn" id="prevImageBtn"><i class="fas fa-chevron-left"></i></button>
+                        <button class="nav-btn" id="nextImageBtn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Información del Producto -->
+                <div class="product-info-column">
+                    <h1 id="productName">Nombre del Producto</h1>
+                    <p id="productCategory">Categoría</p>
+                    <p id="productPrice">$0.00</p>
+
+                    <!-- Selección de Talla -->
+                    <div class="size-selector">
+                        <h3>Selecciona tu talla</h3>
+                        <a href="#" class="size-guide-link">Guía de tallas</a>
+                        <div class="size-buttons" id="sizeButtons">
+                            <!-- Los botones de talla se cargarán dinámicamente con JS -->
+                        </div>
+                    </div>
+
+                    <!-- Botones de Acción -->
+                    <button class="btn-black" id="addToCartBtn">Agregar a la bolsa de compra</button>
+                    <button class="btn-white" id="favoriteBtn">
+                        <i class="far fa-heart"></i> Favoritos
+                    </button>
+
+                    <!-- Información de Envío -->
+                    <div class="shipping-info">
+                        <h4>Envío gratuito*</h4>
+                        <p>Para obtener información de envío precisa <a href="#">Editar ubicación</a></p>
+                    </div>
+
+                    <!-- Descripción del Producto -->
+                    <div class="product-description" id="productDescription">
+                        <p>Descripción del producto...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (opcional) -->
+    <footer class="footer">
+        <div class="container-limit">
+            <div class="footer-bottom">
+                <p>© 2026 Boutique, NLZ. Todos los derechos reservados</p>
+                <div class="footer-menu">
+                    <div class="dropdown">
+                        <span>Guías ▾</span>
+                    </div>
+                    <a href="#">Términos de Uso</a>
+                    <a href="#">Términos de Venta</a>
+                    <a href="#">Detalles de la Empresa</a>
+                    <a href="#">Política de Privacidad y Cookies</a>
+                    <a href="#">Configuración de Privacidad y Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="producto.js"></script>
+</body>
+
+</html>
