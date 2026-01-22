@@ -56,9 +56,9 @@ const productos = {
         categoria: 'Gorra, playera y pans',
         precio: '$549',
         imagenes: [
-            'src/imagenes/tenis/Tenis19/55.svg',
-            'src/imagenes/tenis/Tenis19/56.svg',
-            'src/imagenes/tenis/Tenis19/57.svg'
+            'src/imagenes/tenis/Tenis12/34.svg',
+            'src/imagenes/tenis/Tenis12/35.svg',
+            'src/imagenes/tenis/Tenis12/36.svg'
         ],
         descripcion: 'Este conjunto Adidas incluye una gorra, una playera y unos pants ideales para entrenamientos casuales o días de descanso. Combina estilo y comodidad en un solo paquete.',
         tallas: ['S', 'M', 'L', 'XL', 'XXL']
