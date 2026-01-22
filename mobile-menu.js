@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Hombre',
             items: [
                 { name: 'Destacados', link: '#' },
-                { name: 'Calzado', link: '#' },
-                { name: 'Ropa', link: '#' },
+                { name: 'Calzado', link: 'tenisw-hombre.html' },
+                { name: 'Ropa', link: 'ropa-hombre.html' },
                 { name: 'Comprar por deporte', link: '#' },
                 { name: 'Accesorios y equipo', link: '#' }
             ]
