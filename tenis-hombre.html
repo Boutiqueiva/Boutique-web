@@ -44,16 +44,17 @@
             <div class="category-header">
                 <h1 id="category-title">Tenis para Hombre (<span id="product-count">0</span>)</h1>
                 <div class="category-actions">
-                    <button class="filter-btn">Ocultar filtros</button>
-                    <div class="sort-dropdown">
-                        <span>Ordenar por ▾</span>
-                    </div>
+                    <button id="toggleFiltersBtn" class="filter-btn">Ocultar filtros</button>
+
+                        <div class="sort-dropdown">
+                            <span>Ordenar por ▾</span>
+                        </div>
                 </div>
             </div>
 
             <!-- Filtros Laterales -->
             <div class="category-content">
-                <aside class="filters-sidebar">
+                <aside id="filtersSidebar" class="filters-sidebar">
                     <div class="filter-group">
                         <h3>Categorías</h3>
                         <ul>
@@ -395,9 +396,27 @@
 
     <!-- Script para contar productos -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
+            // Contar productos
             const productCards = document.querySelectorAll('.product-card');
             document.getElementById('product-count').textContent = productCards.length;
+
+            // Toggle de filtros
+            const toggleBtn = document.getElementById('toggleFiltersBtn');
+            const filtersSidebar = document.getElementById('filtersSidebar');
+
+            // Verificar si los elementos existen (por si se reutiliza en otras páginas)
+            if (toggleBtn && filtersSidebar) {
+                toggleBtn.addEventListener('click', function () {
+                    if (filtersSidebar.style.display === 'none') {
+                        filtersSidebar.style.display = 'block';
+                        toggleBtn.textContent = 'Ocultar filtros';
+                    } else {
+                        filtersSidebar.style.display = 'none';
+                        toggleBtn.textContent = 'Mostrar filtros';
+                    }
+                });
+            }
         });
     </script>
 </body>
