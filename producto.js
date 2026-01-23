@@ -733,6 +733,88 @@ const productos = {
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
         tallas: ['S', 'M', 'L', 'XL']
     },
+    'chamarra-nautica': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Ropa/Chamarras/Nautica/3.svg',
+            'src/imagenes/Ropa/Chamarras/Nautica/4.svg',
+            'src/imagenes/Ropa/Chamarras/Nautica/5.svg'            
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'chamarra-tnf': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Ropa/Chamarras/The North Face/8.svg',
+            'src/imagenes/Ropa/Chamarras/The North Face/6.svg',
+            'src/imagenes/Ropa/Chamarras/The North Face/7.svg'            
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'playera-on': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Ropa/Playera/Old Navy/14.svg',
+            'src/imagenes/Ropa/Playera/Old Navy/13.svg'            
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'playera-lc': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Ropa/Playera/Lacoste/Gris/12.svg',
+            'src/imagenes/Ropa/Playera/Lacoste/Gris/10.svg',
+            'src/imagenes/Ropa/Playera/Lacoste/Gris/11.svg',
+            'src/imagenes/Ropa/Playera/Lacoste/Gris/9.svg'
+                        
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'short-rosa': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Ropa/Short/Short de vestir/Rosa/18.svg',
+            'src/imagenes/Ropa/Short/Short de vestir/Rosa/17.svg'                        
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'pantalon-gris': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Ropa/Pantalon vestir/Gris/Gris 2/1.svg',
+            'src/imagenes/Ropa/Pantalon vestir/Gris/Gris 2/2.svg'                        
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'pantalon-gris-2': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Ropa/Pantalon vestir/Gris/Gris 3/15.svg',
+            'src/imagenes/Ropa/Pantalon vestir/Gris/Gris 3/16.svg'                        
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
 };
 
 // === FUNCIONES EXISTENTES (NO CAMBIAN) ===
