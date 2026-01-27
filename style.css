@@ -520,3 +520,151 @@ iframe {
     opacity: 1;
     transform: scale(1.05);
 }
+/* ===============================
+   LOOKS – MOBILE FIX 🔥
+================================ */
+@media (max-width: 768px) {
+
+    .look-scroll {
+        gap: 30px;
+        padding-bottom: 10px;
+    }
+
+    .look-box {
+        min-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .look-main-img {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .look-items {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .look-thumb {
+        width: 70px;
+    }
+
+    .look-info {
+        padding: 0 10px;
+    }
+
+    .look-info h3 {
+        font-size: 20px;
+    }
+
+    .look-info p {
+        font-size: 14px;
+    }
+}
+/* ===============================
+   FIX TOTAL LOOKS MOBILE 🚑🔥
+================================ */
+@media (max-width: 768px) {
+
+    /* contenedor general */
+    .look-container {
+        display: block !important;
+        padding: 0;
+    }
+
+    /* scroll horizontal */
+    .look-scroll {
+        display: flex !important;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+        padding: 0 10px 20px;
+    }
+
+    /* cada look */
+    .look-box {
+        min-width: 100%;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        scroll-snap-align: center;
+    }
+
+    /* imagen principal */
+    .look-main {
+        width: 100%;
+        text-align: center;
+    }
+
+    .look-main-img {
+        max-width: 240px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* miniaturas */
+    .look-items {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .look-thumb {
+        width: 65px;
+    }
+
+    /* info */
+    .look-info {
+        text-align: center;
+        padding: 0 12px;
+    }
+
+    .look-info h3 {
+        font-size: 18px;
+    }
+
+    .look-info p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+.mobile-menu {
+    position: fixed;
+    inset: 0;
+    background: white;
+    transform: translateX(100%);
+    transition: transform 0.35s ease;
+    z-index: 1000;
+    padding: 30px;
+}
+
+.mobile-menu.active {
+    transform: translateX(0);
+}
+
+.close-menu {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-links {
+    list-style: none;
+    margin-top: 40px;
+}
+
+.mobile-links li {
+    margin-bottom: 20px;
+}
+
+.mobile-links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}

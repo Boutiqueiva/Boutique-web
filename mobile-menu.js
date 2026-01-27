@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileMenu = document.getElementById('mobileMenuPanel');
     const closeBtn = document.getElementById('closeMobileMenu');
 
+    if (!hamburger || !mobileMenu || !closeBtn) return;
+
     hamburger.addEventListener('click', () => {
         mobileMenu.classList.add('active');
         document.body.style.overflow = 'hidden';
