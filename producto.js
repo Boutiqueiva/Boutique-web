@@ -570,6 +570,17 @@ const productos = {
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
         tallas: ['S', 'M', 'L', 'XL']
     },
+    'nike-conjunto-3': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Ropa/Conjuntos/3/26.svg',
+            'src/imagenes/Ropa/Playera/Tommy/Polo/17.svg'
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
     'pantalon-mezclilla-5': {
         nombre: 'Nike Air',
         categoria: 'Jersey para hombre',
@@ -672,6 +683,19 @@ const productos = {
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
         tallas: ['S', 'M', 'L', 'XL']
     },
+    'playera-tommy-polo': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Ropa/Playera/Tommy/Polo/17.svg',
+            'src/imagenes/Ropa/Playera/Tommy/Polo/16.svg',
+            'src/imagenes/Ropa/Playera/Tommy/Polo/15.svg'
+            
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
     'conjunto-tommy': {
         nombre: 'Nike Air',
         categoria: 'Jersey para hombre',
@@ -692,7 +716,8 @@ const productos = {
         imagenes: [
             'src/imagenes/Ropa/Conjuntos/4/27.svg',
             'src/imagenes/Ropa/Playera/Tipo Polo/Ralph/13.svg',
-            'src/imagenes/Ropa/Pantalon vestir/Gris/7.svg'
+            'src/imagenes/Ropa/Pantalon vestir/Gris/7.svg',
+            'src/imagenes/Tenis/Tenis8/23.svg'
             
         ],
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
@@ -1004,7 +1029,219 @@ const productos = {
         descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
         tallas: ['S', 'M', 'L', 'XL']
     },
-
+    'tenis-28': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Tenis/Tenis28/3.svg',
+            'src/imagenes/Tenis/Tenis28/1.svg',
+            'src/imagenes/Tenis/Tenis28/2.svg',
+            'src/imagenes/Tenis/Tenis28/4.svg'
+                                    
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'tenis-29': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Tenis/Tenis29/5.svg',
+            'src/imagenes/Tenis/Tenis29/6.svg',
+            'src/imagenes/Tenis/Tenis29/7.svg',
+            'src/imagenes/Tenis/Tenis29/8.svg'
+                                    
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'tenis-30': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Tenis/Tenis30/9.svg',
+            'src/imagenes/Tenis/Tenis30/10.svg',
+            'src/imagenes/Tenis/Tenis30/11.svg'                                    
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'tenis-31': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Tenis/Tenis31/12.svg',
+            'src/imagenes/Tenis/Tenis31/13.svg',
+            'src/imagenes/Tenis/Tenis31/14.svg',
+            'src/imagenes/Tenis/Tenis31/15.svg',
+            'src/imagenes/Tenis/Tenis31/16.svg'
+                                    
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'tenis-32': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Tenis/Tenis32/17.svg',
+            'src/imagenes/Tenis/Tenis32/18.svg',
+            'src/imagenes/Tenis/Tenis32/19.svg',
+            'src/imagenes/Tenis/Tenis32/20.svg',
+            'src/imagenes/Tenis/Tenis32/21.svg',
+            'src/imagenes/Tenis/Tenis32/22.svg'
+                                    
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'tenis-33': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Tenis/Tenis33/23.svg',
+            'src/imagenes/Tenis/Tenis33/24.svg',
+            'src/imagenes/Tenis/Tenis33/25.svg',
+            'src/imagenes/Tenis/Tenis33/26.svg'
+                                    
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'tenis-34': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Tenis/Tenis34/27.svg',
+            'src/imagenes/Tenis/Tenis34/28.svg',
+            'src/imagenes/Tenis/Tenis34/29.svg',
+            'src/imagenes/Tenis/Tenis34/30.svg'
+                                    
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'tenis-35': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Tenis/Tenis35/31.svg',
+            'src/imagenes/Tenis/Tenis35/32.svg',
+            'src/imagenes/Tenis/Tenis35/33.svg'                                    
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'tenis-36': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Tenis/Tenis36/34.svg',
+            'src/imagenes/Tenis/Tenis36/35.svg',
+            'src/imagenes/Tenis/Tenis36/36.svg'                                    
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'tenis-37': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Tenis/Tenis37/37.svg',
+            'src/imagenes/Tenis/Tenis37/38.svg',
+            'src/imagenes/Tenis/Tenis37/39.svg'                                    
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'tenis-38': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Tenis/Tenis38/40.svg',
+            'src/imagenes/Tenis/Tenis38/41.svg',
+            'src/imagenes/Tenis/Tenis38/42.svg'                                    
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'tenis-39': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Tenis/Tenis39/43.svg',
+            'src/imagenes/Tenis/Tenis39/44.svg',
+            'src/imagenes/Tenis/Tenis39/45.svg',
+            'src/imagenes/Tenis/Tenis39/46.svg'
+                                    
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'tenis-40': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Tenis/Tenis40/47.svg',
+            'src/imagenes/Tenis/Tenis40/48.svg',
+            'src/imagenes/Tenis/Tenis40/49.svg',
+            'src/imagenes/Tenis/Tenis40/50.svg',
+            'src/imagenes/Tenis/Tenis40/51.svg',
+            'src/imagenes/Tenis/Tenis40/52.svg'
+                                    
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'tenis-41': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Tenis/Tenis41/53.svg',
+            'src/imagenes/Tenis/Tenis41/54.svg',
+            'src/imagenes/Tenis/Tenis41/55.svg'                                    
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'sueter-jw': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Ropa/Sueters/3.svg',
+            'src/imagenes/Ropa/Sueters/1.svg',
+            'src/imagenes/Ropa/Sueters/2.svg'                                    
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
+    'playera-nike': {
+        nombre: 'Nike Air',
+        categoria: 'Jersey para hombre',
+        precio: '$1,599',
+        imagenes: [
+            'src/imagenes/Ropa/Playera/Nike/4.svg',
+            'src/imagenes/Ropa/Playera/Nike/4.svg',
+            'src/imagenes/Ropa/Playera/Nike/4.svg'                                    
+        ],
+        descripcion: 'Jersey con acabados premium y estilo contemporáneo.',
+        tallas: ['S', 'M', 'L', 'XL']
+    },
 };
 
 // === FUNCIONES EXISTENTES (NO CAMBIAN) ===
@@ -1024,7 +1261,7 @@ function loadProductData(productId) {
         return;
     }
 
-    document.title = `${product.nombre} - Nike Clone`;
+    document.title = `${product.nombre}`;
 
     document.getElementById('productName').textContent = product.nombre;
     document.getElementById('productCategory').textContent = product.categoria;

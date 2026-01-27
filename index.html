@@ -4,562 +4,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boutique</title>
+    <title>NLZ Boutique</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-    <div class="pre-navbar" id="topNav">
-        <div class="container-limit">
-            <div class="jordan-container">
-                <img src="https://upload.wikimedia.org/wikipedia/en/3/37/Jumpman_logo.svg" class="jordan-logo"
-                    alt="Jordan">
-            </div>
-            <div class="pre-nav-links">
-                <a href="#">Buscar tienda</a> <span>|</span>
-                <a href="#">Ayuda</a> <span>|</span>
-                <a href="#">Únete</a> <span>|</span>
-                <a href="#">Iniciar sesión</a>
-            </div>
-        </div>
-    </div>
-
-    <header class="main-header" id="smartHeader">
+    <!-- HEADER -->
+    <header class="main-header">
         <nav class="navbar container-limit">
-            <div class="logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike">
-            </div>
 
-            <!-- Icono hamburguesa para móvil -->
-            <div class="hamburger" id="hamburgerMenu">☰</div>
+            <div class="logo-text">NLZ</div>
 
-            <!-- Menú principal (visible en desktop) -->
-            <ul class="nav-links" id="desktopMenu">
+            <ul class="nav-links">
                 <li><a href="#">Lo Nuevo</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Hombre</a>
-                    <div class="dropdown-menu">
-                        <div class="menu-column">
-                            <h4>Destacados</h4>
-                            <a href="ropa-hombre.html">Ver todo Hombre</a>
-                            <a href="#">Lo Nuevo</a>
-                            <a href="#">Los mas vendidos</a>
-                            <a href="#">Ofertas para Hombre</a>
-                            <a href="#">Guía de Calzado de Fútbol</a>
-                        </div>
-                        <div class="menu-column">
-                            <h4>Calzado</h4>
-                            <a href="#">Todo el calzado</a>
-                            <a href="#">Casual</a>
-                            <a href="#">Jordan</a>
-                            <a href="#">Air Force 1</a>
-                            <a href="#">Air Max</a>
-                            <a href="#">Dunks & Blazers</a>
-                            <a href="#">Tacos de fútbol</a>
-                            <a href="#">Correr</a>
-                            <a href="#">Básquetbol</a>
-                            <a href="#">Gym y Entrenamiento</a>
-                            <a href="#">Sandalias y chanclas</a>
-                            <a href="#">Nike SB</a>
-                        </div>
-                        <div class="menu-column">
-                            <h4>Ropa</h4>
-                            <a href="ropa-hombre.html">Toda la ropa</a>
-                            <a href="#">Jordan</a>
-                            <a href="#">Playeras y tops</a>
-                            <a href="#">Jerseys</a>
-                            <a href="#">Sudaderas</a>
-                            <a href="#">Shorts</a>
-                            <a href="#">Chamarras y chalecos</a>
-                            <a href="#">Pants y tights</a>
-                            <a href="#">Conjuntos de entrenamiento</a>
-                            <a href="#">Calcetines</a>
-                        </div>
-                        <div class="menu-column">
-                            <h4>Comprar por deporte</h4>
-                            <a href="#">Fútbol</a>
-                            <a href="#">Correr</a>
-                            <a href="#">Entrenamiento y Gym</a>
-                            <a href="#">Básquetbol</a>
-                            <a href="#">Fútbol Americano</a>
-                            <a href="#">Trail</a>
-                            <a href="#">Tenis y Padel</a>
-                            <a href="#">Natación</a>
-                            <a href="#">Golf</a>
-                            <a href="#">Nike Sportswear</a>
-                            <a href="#">Jordan</a>
-                            <a href="#">Nike SB (Skateboarding)</a>
-                        </div>
-                        <div class="menu-column">
-                            <h4>Accesorios y equipo</h4>
-                            <a href="#">Maletas</a>
-                            <a href="#">Mochilas</a>
-                            <a href="#">Gorras, viseras y bandas</a>
-                            <a href="#">Balones</a>
-                            <a href="#">Equipo de fútbol</a>
-                            <a href="#">Accesorios y equipo</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Mujer</a>
-                    <div class="dropdown-menu">
-                        <div class="menu-column">
-                            <h4>Destacados</h4>
-                            <a href="#">Ver todo Mujer</a>
-                            <a href="#">Lo Nuevo</a>
-                            <a href="#">Los mas vendidos</a>
-                            <a href="#">Ofertas para Mujer</a>
-                            <a href="#">Guía de Calzado de Fútbol</a>
-                        </div>
-                        <div class="menu-column">
-                            <h4>Calzado</h4>
-                            <a href="#">Todo el calzado</a>
-                            <a href="#">Casual</a>
-                            <a href="#">Jordan</a>
-                            <a href="#">Air Force 1</a>
-                            <a href="#">Air Max</a>
-                            <a href="#">Dunks & Blazers</a>
-                            <a href="#">Tacos de fútbol</a>
-                            <a href="#">Correr</a>
-                            <a href="#">Básquetbol</a>
-                            <a href="#">Gym y Entrenamiento</a>
-                            <a href="#">Sandalias y chanclas</a>
-                            <a href="#">Nike SB</a>
-                        </div>
-                        <div class="menu-column">
-                            <h4>Ropa</h4>
-                            <a href="#">Toda la ropa</a>
-                            <a href="#">Jordan</a>
-                            <a href="#">Playeras y tops</a>
-                            <a href="#">Jerseys</a>
-                            <a href="#">Sudaderas</a>
-                            <a href="#">Shorts</a>
-                            <a href="#">Chamarras y chalecos</a>
-                            <a href="#">Pants y tights</a>
-                            <a href="#">Conjuntos de entrenamiento</a>
-                            <a href="#">Calcetines</a>
-                        </div>
-                        <div class="menu-column">
-                            <h4>Comprar por deporte</h4>
-                            <a href="#">Fútbol</a>
-                            <a href="#">Correr</a>
-                            <a href="#">Entrenamiento y Gym</a>
-                            <a href="#">Básquetbol</a>
-                            <a href="#">Fútbol Americano</a>
-                            <a href="#">Trail</a>
-                            <a href="#">Tenis y Padel</a>
-                            <a href="#">Natación</a>
-                            <a href="#">Golf</a>
-                            <a href="#">Nike Sportswear</a>
-                            <a href="#">Jordan</a>
-                            <a href="#">Nike SB (Skateboarding)</a>
-                        </div>
-                        <div class="menu-column">
-                            <h4>Accesorios y equipo</h4>
-                            <a href="#">Maletas</a>
-                            <a href="#">Mochilas</a>
-                            <a href="#">Gorras, viseras y bandas</a>
-                            <a href="#">Balones</a>
-                            <a href="#">Equipo de fútbol</a>
-                            <a href="#">Accesorios y equipo</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Niños</a>
-                    <div class="dropdown-menu">
-                        <div class="menu-column">
-                            <h4>Destacados</h4>
-                            <a href="#">Ver todo Niños</a>
-                            <a href="#">Lo Nuevo</a>
-                            <a href="#">Los mas vendidos</a>
-                            <a href="#">Ofertas para Niños</a>
-                            <a href="#">Guía de Calzado de Fútbol</a>
-                        </div>
-                        <div class="menu-column">
-                            <h4>Calzado</h4>
-                            <a href="#">Todo el calzado</a>
-                            <a href="#">Casual</a>
-                            <a href="#">Jordan</a>
-                            <a href="#">Air Force 1</a>
-                            <a href="#">Air Max</a>
-                            <a href="#">Dunks & Blazers</a>
-                            <a href="#">Tacos de fútbol</a>
-                            <a href="#">Correr</a>
-                            <a href="#">Básquetbol</a>
-                            <a href="#">Gym y Entrenamiento</a>
-                            <a href="#">Sandalias y chanclas</a>
-                            <a href="#">Nike SB</a>
-                        </div>
-                        <div class="menu-column">
-                            <h4>Ropa</h4>
-                            <a href="#">Toda la ropa</a>
-                            <a href="#">Jordan</a>
-                            <a href="#">Playeras y tops</a>
-                            <a href="#">Jerseys</a>
-                            <a href="#">Sudaderas</a>
-                            <a href="#">Shorts</a>
-                            <a href="#">Chamarras y chalecos</a>
-                            <a href="#">Pants y tights</a>
-                            <a href="#">Conjuntos de entrenamiento</a>
-                            <a href="#">Calcetines</a>
-                        </div>
-                        <div class="menu-column">
-                            <h4>Comprar por deporte</h4>
-                            <a href="#">Fútbol</a>
-                            <a href="#">Correr</a>
-                            <a href="#">Entrenamiento y Gym</a>
-                            <a href="#">Básquetbol</a>
-                            <a href="#">Fútbol Americano</a>
-                            <a href="#">Trail</a>
-                            <a href="#">Tenis y Padel</a>
-                            <a href="#">Natación</a>
-                            <a href="#">Golf</a>
-                            <a href="#">Nike Sportswear</a>
-                            <a href="#">Jordan</a>
-                            <a href="#">Nike SB (Skateboarding)</a>
-                        </div>
-                        <div class="menu-column">
-                            <h4>Accesorios y equipo</h4>
-                            <a href="#">Maletas</a>
-                            <a href="#">Mochilas</a>
-                            <a href="#">Gorras, viseras y bandas</a>
-                            <a href="#">Balones</a>
-                            <a href="#">Equipo de fútbol</a>
-                            <a href="#">Accesorios y equipo</a>
-                        </div>
-                    </div>
-                </li>
+                <li><a href="ropa-hombre.html">Hombre</a></li>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Niños</a></li>
                 <li><a href="#">Ofertas</a></li>
-                <li><a href="#">SNKRS</a></li>
             </ul>
 
-            <!-- Íconos de búsqueda, favoritos y carrito -->
-            <div class="nav-icons">
-                <div class="search-container">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Buscar">
-                </div>
-                <i class="fa-regular fa-heart icon-btn"></i>
-                <i class="fa-solid fa-bag-shopping icon-btn"></i>
-            </div>
+            <div class="hamburger" id="hamburgerMenu">☰</div>
         </nav>
-
-        <!-- Panel lateral móvil (oculto por defecto) -->
-        <div class="mobile-menu-panel" id="mobileMenuPanel">
-            <div class="mobile-menu-header">
-                <div class="mobile-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike">
-                </div>
-                <div class="mobile-menu-close" id="closeMobileMenu">×</div>
-            </div>
-            <div class="mobile-menu-content">
-                <div class="mobile-category-item" data-category="all">
-                    <span>Todos</span>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-                <div class="mobile-category-item" data-category="hombre">
-                    <span>Hombre</span>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-                <div class="mobile-category-item" data-category="mujer">
-                    <span>Mujer</span>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-                <div class="mobile-category-item" data-category="ninos">
-                    <span>Niños</span>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-                <div class="mobile-category-item" data-category="ofertas">
-                    <span>Ofertas</span>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-                <div class="mobile-category-item" data-category="snkrs">
-                    <span>SNKRS</span>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-            </div>
-            <div class="mobile-submenu" id="mobileSubmenu">
-                <div class="submenu-header">
-                    <button class="back-btn" id="backToCategories"><i class="fas fa-chevron-left"></i> Todo</button>
-                    <h3 id="submenuTitle">Categoría</h3>
-                </div>
-                <div class="submenu-content" id="submenuContent">
-                    <!-- Contenido dinámico -->
-                </div>
-            </div>
-        </div>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
-        <img src="src/imagenes/Fondo2.jpeg" class="hero-img">
-        <div class="hero-overlay container-limit">
-        </div>
+        <img src="src/imagenes/Fondo2.jpeg" alt="NLZ Boutique">
     </section>
 
+    <!-- PRODUCTS -->
     <section class="products-section">
         <div class="container-limit">
+
             <div class="products-header">
                 <h2>Domina cada set</h2>
+
                 <div class="products-nav">
-                    <a href="tenis-hombre.html" class="ver-todo">Ver todo</a>
-                    <button class="nav-btn" onclick="moverSlider(-460)">❮</button>
-                    <button class="nav-btn" onclick="moverSlider(460)">❯</button>
+                    <button onclick="moverSlider(-300)">❮</button>
+                    <button onclick="moverSlider(300)">❯</button>
+
+                    <a href="tenis-hombre.html" class="btn-ver-todo">
+                        Ver todo
+                    </a>
                 </div>
             </div>
-            <!-- products-slider -->
+
             <div class="products-slider" id="mainSlider">
-                <a href="producto.html?id=nike-vapor-pro-3" class="product-link">
-                    <div class="product-card">
-                        <img src="src/imagenes/Tenis/Tenis1/2.svg" alt="Nike Vapor Pro 3">
-                        <div class="product-info">
-                            <h4>Nike Vapor Pro 3</h4>
-                            <p>Tenis mujer</p>
-                            <p class="p-price">$3,199</p>
-                        </div>
-                    </div>
+                <a class="product-card" href="producto.html?id=nike-vapor-pro-3">
+                    <img src="src/imagenes/Tenis/Tenis1/2.svg" alt="">
+                    <h4>NLZ Pro Court</h4>
+                    <p>Tenis performance</p>
+                    <span>$3,199</span>
                 </a>
-                <a href="producto.html?id=nikecourt-victory" class="product-link">
-                    <div class="product-card">
-                        <img src="src/imagenes/Tenis/Tenis2/5.svg" alt="NikeCourt Victory">
-                        <div class="product-info">
-                            <h4>NikeCourt Victory</h4>
-                            <p>Playera Dri-FIT</p>
-                            <p class="p-price">$949</p>
-                        </div>
-                    </div>
+
+                <a class="product-card" href="producto.html?id=nikecourt-victory">
+                    <img src="src/imagenes/Tenis/Tenis2/5.svg" alt="">
+                    <h4>NLZ Pro Court</h4>
+                    <p>Tenis performance</p>
+                    <span>$3,199</span>
                 </a>
-                <a href="producto.html?id=nike-court-lite-4" class="product-link">
-                    <div class="product-card">
-                        <img src="src/imagenes/Tenis/Tenis3/7.svg" alt="Nike Court Lite 4">
-                        <div class="product-info">
-                            <h4>Nike Court Lite 4</h4>
-                            <p>Tenis hombre</p>
-                            <p class="p-price">$1,699</p>
-                        </div>
-                    </div>
+
+                <a class="product-card" href="producto.html?id=nike-court-lite-4">
+                    <img src="src/imagenes/Tenis/Tenis3/7.svg" alt="">
+                    <h4>NLZ Pro Court</h4>
+                    <p>Tenis performance</p>
+                    <span>$3,199</span>
                 </a>
-                <a href="producto.html?id=nikecourt-slam" class="product-link">
-                    <div class="product-card">
-                        <img src="src/imagenes/Tenis/Tenis4/10.svg" alt="NikeCourt Slam">
-                        <div class="product-info">
-                            <h4>NikeCourt Slam</h4>
-                            <p>Shorts</p>
-                            <p class="p-price">$1,899</p>
-                        </div>
-                    </div>
+
+                <a class="product-card" href="producto.html?id=nikecourt-slam">
+                    <img src="src/imagenes/Tenis/Tenis4/10.svg" alt="">
+                    <h4>NLZ Pro Court</h4>
+                    <p>Tenis performance</p>
+                    <span>$3,199</span>
                 </a>
-                <a href="producto.html?id=nikecourt-dry" class="product-link">
-                    <div class="product-card">
-                        <img src="src/imagenes/Tenis/Tenis16/46.svg" alt="NikeCourt Dry">
-                        <div class="product-info">
-                            <h4>NikeCourt Dry</h4>
-                            <p>Falda</p>
-                            <p class="p-price">$1,299</p>
-                        </div>
-                    </div>
+
+                <a class="product-card" href="producto.html?id=nikecourt-dry">
+                    <img src="src/imagenes/Tenis/Tenis16/46.svg" alt="">
+                    <h4>NLZ Pro Court</h4>
+                    <p>Tenis performance</p>
+                    <span>$3,199</span>
                 </a>
-                <a href="producto.html?id=zoom-bella" class="product-link">
-                    <div class="product-card">
-                        <img src="src/imagenes/Tenis/Tenis25/74.svg" alt="Zoom Bella">
-                        <div class="product-info">
-                            <h4>Zoom Bella</h4>
-                            <p>Entrenamiento</p>
-                            <p class="p-price">$2,100</p>
-                        </div>
-                    </div>
+
+                <a class="product-card" href="producto.html?id=zoom-bella">
+                    <img src="src/imagenes/Tenis/Tenis25/74.svg" alt="">
+                    <h4>NLZ Pro Court</h4>
+                    <p>Tenis performance</p>
+                    <span>$3,199</span>
                 </a>
-                <a href="producto.html?id=advantage-polo" class="product-link">
-                    <div class="product-card">
-                        <img src="src/imagenes/Tenis/Tenis27/80.svg" alt="Advantage Polo">
-                        <div class="product-info">
-                            <h4>Advantage Polo</h4>
-                            <p>Polo</p>
-                            <p class="p-price">$1,499</p>
-                        </div>
-                    </div>
+
+                <a class="product-card" href="producto.html?id=advantage-polo">
+                    <img src="src/imagenes/Tenis/Tenis27/80.svg" alt="">
+                    <h4>NLZ Pro Court</h4>
+                    <p>Tenis performance</p>
+                    <span>$3,199</span>
                 </a>
-                <a href="producto.html?id=gp-turbo" class="product-link">
-                    <div class="product-card">
-                        <img src="src/imagenes/Tenis/Tenis21/61.svg" alt="GP Turbo">
-                        <div class="product-info">
-                            <h4>GP Turbo</h4>
-                            <p>Tenis cancha dura</p>
-                            <p class="p-price">$3,599</p>
-                        </div>
-                    </div>
+
+                <a class="product-card" href="producto.html?id=gp-turbo">
+                    <img src="src/imagenes/Tenis/Tenis21/61.svg" alt="">
+                    <h4>NLZ Pro Court</h4>
+                    <p>Tenis performance</p>
+                    <span>$3,199</span>
                 </a>
-                <a href="producto.html?id=nike-pro" class="product-link">
-                    <div class="product-card">
-                        <img src="src/imagenes/Tenis/Tenis18/52.svg" alt="Nike Pro">
-                        <div class="product-info">
-                            <h4>Nike Pro</h4>
-                            <p>Capa base</p>
-                            <p class="p-price">$849</p>
-                        </div>
-                    </div>
+
+                <a class="product-card" href="producto.html?id=nike-pro">
+                    <img src="src/imagenes/Tenis/Tenis18/52.svg" alt="">
+                    <h4>NLZ Pro Court</h4>
+                    <p>Tenis performance</p>
+                    <span>$3,199</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="astro-section">
-        <div class="astro-grid">
-            <div class="astro-item">
-                <img src="src/imagenes/Fondo3.jpeg">
-            </div>
-        </div>
-        <div class="astro-content container-limit">
-            <h2 class="astro-title">NIKE ASTROGRABBER</h2>
-            <p>Un estilo que mantiene el control—Get a Grip.</p>
-            <button class="btn-black">Comprar</button>
-        </div>
-    </section>
-
-    <!-- SECCIÓN COMPRA POR CATEGORÍAS -->
-    <section class="categories-section">
+    <!-- LOOK -->
+    <section class="look-section">
         <div class="container-limit">
-            <h2 class="section-title">COMPRA POR CATEGORÍAS</h2>
-            <div class="categories-grid">
-                <!-- Fila 1 -->
-                <div class="category-item">
-                    <img src="src/imagenes/Jersey.png" alt="Jerseys fútbol">
-                    <p>Jerseys fútbol</p>
-                </div>
-                <div class="category-item">
-                    <img src="src/imagenes/Tenis/Tenis3/7.svg" alt="Jordan 1">
-                    <p>Jordan </p>
-                </div>
-                <div class="category-item">
-                    <img src="src/imagenes/gorras.png" alt="Gorras, gorros, sombreros">
-                    <p>Gorras, gorros, sombreros</p>
-                </div>
-                <div class="category-item">
-                    <img src="src/imagenes/bras.png" alt="Bras deportivos">
-                    <p>Bras deportivos</p>
-                </div>
-                <div class="category-item">
-                    <img src="src/imagenes/chanclas.png" alt="Chancletas y sandalias">
-                    <p>Chancletas y sandalias</p>
-                </div>
-                <div class="category-item">
-                    <img src="src/imagenes/Tenis/Tenis21/61.svg" alt="Air Max">
-                    <p>Adidas</p>
-                </div>
-                <div class="category-item">
-                    <img src="src/imagenes/shox.png" alt="Shox">
-                    <p>Shox</p>
-                </div>
-                <div class="category-item">
-                    <img src="src/imagenes/Tenis/Tenis27/80.svg" alt="Cortez">
-                    <p>Terrex</p>
-                </div>
 
-                <!-- Fila 2 -->
-                <div class="category-item">
-                    <img src="src/imagenes/metcon.png" alt="Metcon">
-                    <p>Metcon</p>
-                </div>
-                <div class="category-item">
-                    <img src="src/imagenes/v2k.png" alt="V2K">
-                    <p>V2K</p>
-                </div>
-                <div class="category-item">
-                    <img src="src/imagenes/nba.png" alt="NBA">
-                    <p>NBA</p>
-                </div>
-                <div class="category-item">
-                    <img src="src/imagenes/plus.png" alt="Vomero Plus">
-                    <p>Vomero Plus</p>
-                </div>
-                <div class="category-item">
-                    <img src="src/imagenes/pegasus.png" alt="Pegasus Premium">
-                    <p>Pegasus Premium</p>
-                </div>
-                <div class="category-item">
-                    <img src="src/imagenes/nfl.png" alt="NFL">
-                    <p>NFL</p>
-                </div>
-                <div class="category-item">
-                    <img src="src/imagenes/dunk.png" alt="Dunk">
-                    <p>Dunk</p>
-                </div>
-                <div class="category-item">
-                    <img src="src/imagenes/Tenis/Tenis14/40.svg" alt="AF1">
-                    <p>AF1</p>
+            <div class="products-header">
+                <h2>Looks destacados</h2>
+
+                <div class="products-nav">
+                    <button id="lookPrev">‹</button>
+                    <button id="lookNext">›</button>
                 </div>
             </div>
 
-            <!-- Enlaces por categoría -->
-            <div class="category-links">
-                <div class="category-column">
-                    <h3>Tenis y Calzado</h3>
-                    <ul>
-                        <li><a href="#">Tenis Para Correr</a></li>
-                        <li><a href="#">Tacos de Fútbol</a></li>
-                        <li><a href="#">Tenis para Básquetbol</a></li>
-                        <li><a href="#">Tenis Blancos</a></li>
-                    </ul>
+            <div class="look-scroll">
+
+                <!-- CONJUNTO 1 -->
+                <div class="look-box">
+
+                    <div class="look-main">
+                        <img src="src/imagenes/Ropa/Conjuntos/5/28.svg" class="look-main-img"
+                            data-original="src/imagenes/Ropa/Conjuntos/5/28.svg" data-title="Conjunto Verano"
+                            data-desc="Diseñado para máximo rendimiento con un estilo premium y minimalista."
+                            alt="Conjunto Verano">
+
+                        <button class="btn-look">Ver Look</button>
+                    </div>
+
+                    <div class="look-items">
+                        <img src="src/imagenes/Ropa/Playera/Tipo Polo/Ralph/13.svg" class="look-thumb"
+                            data-image="src/imagenes/Ropa/Playera/Tipo Polo/Ralph/13.svg"
+                            data-title="Playera Ralph Lauren" data-desc="Elegancia y colores fascinantes"
+                            alt="Playera Ralph Lauren">
+
+                        <img src="src/imagenes/Ropa/Pantalon vestir/Tommy/15.svg" class="look-thumb"
+                            data-image="src/imagenes/Ropa/Pantalon vestir/Tommy/15.svg"
+                            data-title="Pantalón Tommy Hilfiger"
+                            data-desc="Acompaña este increíble outfit con elegancia" alt="Pantalón Tommy Hilfiger">
+                    </div>
+
+                    <div class="look-info">
+                        <h3 class="lookTitle">Explora el look</h3>
+                        <p class="lookDesc">Toca una prenda para descubrir el estilo.</p>
+                    </div>
+
                 </div>
-                <div class="category-column">
-                    <h3>Ropa Deportiva</h3>
-                    <ul>
-                        <li><a href="#">Sudaderas</a></li>
-                        <li><a href="#">Tops y playeras deportivas</a></li>
-                        <li><a href="#">Leggings y mallas</a></li>
-                        <li><a href="#">Los mas vendidos</a></li>
-                    </ul>
+
+                <!-- CONJUNTO 2 -->
+                <div class="look-box">
+
+                    <div class="look-main">
+                        <img src="src/imagenes/Ropa/Conjuntos/4/27.svg" class="look-main-img"
+                            data-original="src/imagenes/Ropa/Conjuntos/4/27.svg" data-title="Conjunto Urbano"
+                            data-desc="Combinación perfecta para un estilo moderno y relajado." alt="Conjunto Urbano">
+
+                        <button class="btn-look">Ver Look</button>
+                    </div>
+
+                    <div class="look-items">
+                        <img src="src/imagenes/Ropa/Playera/Tipo Polo/Ralph/13.svg" class="look-thumb"
+                            data-image="src/imagenes/Ropa/Playera/Tipo Polo/Ralph/13.svg"
+                            data-title="Playera Ralph Lauren" data-desc="Elegancia y colores fascinantes"
+                            alt="Playera Ralph Lauren">
+
+                        <img src="src/imagenes/Ropa/Pantalon vestir/Gris/7.svg" class="look-thumb"
+                            data-image="src/imagenes/Ropa/Pantalon vestir/Gris/7.svg" data-title="Pantalón Gris"
+                            data-desc="Balance perfecto entre formal y casual" alt="Pantalón Gris">
+                        <img src="src/imagenes/Tenis/Tenis8/23.svg" class="look-thumb"
+                            data-image="src/imagenes/Tenis/Tenis8/23.svg" data-title="Tenis Nike"
+                            data-desc="Balance perfecto entre formal y casual" alt="Pantalón Gris">
+                    </div>
+
+                    <div class="look-info">
+                        <h3 class="lookTitle">Explora el look</h3>
+                        <p class="lookDesc">Toca una prenda para descubrir el estilo.</p>
+                    </div>
+
                 </div>
-                <div class="category-column">
-                    <h3>Equipos y Jerseys</h3>
-                    <ul>
-                        <li><a href="#">Jersey Pumas</a></li>
-                        <li><a href="#">Jersey PSG</a></li>
-                        <li><a href="#">Jersey Barcelona</a></li>
-                        <li><a href="#">Lakers</a></li>
-                    </ul>
-                </div>
-                <div class="category-column">
-                    <h3>Bebés y Niños</h3>
-                    <ul>
-                        <li><a href="#">Tenis Deportivos Niños</a></li>
-                        <li><a href="#">Ropa Deportiva Niños</a></li>
-                        <li><a href="#">Tacos de Fútbol Niños</a></li>
-                        <li><a href="#">Tenis para Bebés</a></li>
-                    </ul>
-                </div>
+
             </div>
         </div>
     </section>
+    <!-- LOCATION -->
+    <section class="location-section">
+        <div class="container-limit location-container">
 
-    <!-- PIE DE PÁGINA -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!4v1769484236873!6m8!1m7!1shes9VNwpUG2M-_w_9fvcsA!2m2!1d19.08680571102346!2d-98.12174619857815!3f138.50058968227637!4f-8.124067191317806!5f0.7820865974627469"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <div class="location-info">
+                <h3>Visítanos</h3>
+                <p>
+                    Puebla, Pue.<br>
+                    Zona comercial NLZ Boutique
+                </p>
+
+                <a class="btn-maps" href="https://www.google.com/maps/place/19.0868057,-98.1217462" target="_blank">
+                    Abrir en Maps
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
     <footer class="footer">
-        <div class="container-limit">
-            <div class="footer-top"></div>
-            <div class="footer-bottom">
-                <p>© 2026 Boutique, NLZ. Todos los derechos reservados</p>
-                <div class="footer-menu">
-                    <div class="dropdown">
-                        <span>Guías ▾</span>
-                    </div>
-                    <a href="#">Términos de Uso</a>
-                    <a href="#">Términos de Venta</a>
-                    <a href="#">Detalles de la Empresa</a>
-                    <a href="#">Política de Privacidad y Cookies</a>
-                    <a href="#">Configuración de Privacidad y Cookies</a>
-                </div>
-            </div>
+        <p>© 2026 NLZ Boutique</p>
+
+        <div class="socials">
+            <a href="https://wa.me/522221733376" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://instagram.com/nlz_boutique" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
         </div>
     </footer>
 
+    <!-- SCRIPTS -->
     <script src="script.js"></script>
-    <script src="menu.js"></script>
-    <script src="mobile-menu.js"></script>
+    <script src="look.js"></script>
+
 </body>
 
-
 </html>
-
