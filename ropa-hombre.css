@@ -255,17 +255,18 @@
     }
 
     .products-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr; /* 👈 UN SOLO PRODUCTO */
     }
 
     .product-card img {
-        height: 200px;
+        height: 220px; /* un poco más grande para lucir mejor */
     }
 
     .search-container input {
         width: 80px;
     }
 }
+
 
 /* ===============================
    FIX LOGO COLOR (NLZ)
