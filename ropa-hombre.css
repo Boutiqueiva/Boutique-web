@@ -52,7 +52,7 @@
 .filters-sidebar {
     border-right: 1px solid #eee;
     padding-right: 20px;
-    position: relative; /* Para flecha personalizada de select */
+    position: relative;
 }
 
 .filter-group {
@@ -64,59 +64,46 @@
     margin-bottom: 10px;
 }
 
-.filter-list {
+.filters-sidebar ul {
     list-style: none;
+    padding: 0;
 }
 
-.filter-list li {
+.filters-sidebar ul li {
     margin-bottom: 8px;
 }
 
-.filter-btn-item {
-    background: none;
-    border: none;
-    cursor: pointer;
+.filters-sidebar ul li a {
+    color: #000;
+    text-decoration: none;
     font-size: 14px;
-    color: #555;
+    font-weight: 400;
 }
 
-.filter-btn-item:hover {
+.filters-sidebar ul li a:hover {
     font-weight: 600;
-    color: black;
 }
 
 /* ===============================
-   SELECTS – TALLAS Y COLOR (NLZ AJUSTADO)
+   SELECTS
 ================================ */
 .filters-sidebar select {
     width: 100%;
     padding: 10px 12px;
-    padding-right: 30px; /* espacio para flecha */
+    padding-right: 30px;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #fff;
     font-size: 14px;
-    font-family: inherit;
     color: #000;
     outline: none;
     cursor: pointer;
-    appearance: none;          /* Quita estilo nativo */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    position: relative;
-    z-index: 2;
+    appearance: none;
 }
 
-/* Hover y Focus */
 .filters-sidebar select:hover,
 .filters-sidebar select:focus {
     border-color: #000;
-}
-
-/* Opciones */
-.filters-sidebar select option {
-    color: #000;
-    background-color: #fff;
 }
 
 /* Flecha personalizada */
@@ -129,7 +116,6 @@
     pointer-events: none;
     font-size: 14px;
     color: #000;
-    z-index: 1;
 }
 
 /* ===============================
@@ -137,8 +123,14 @@
 ================================ */
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* PC con filtros */
     gap: 30px;
+    transition: grid-template-columns 0.3s ease;
+}
+
+/* PC – filtros ocultos */
+.products-grid.filters-hidden {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .product-link {
@@ -226,14 +218,25 @@
 }
 
 /* ===============================
-   RESPONSIVE
+   RESPONSIVE – TABLET
 ================================ */
 @media (max-width: 1100px) {
     .category-content {
         grid-template-columns: 200px 1fr;
     }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products-grid.filters-hidden {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
+/* ===============================
+   RESPONSIVE – MÓVIL
+================================ */
 @media (max-width: 900px) {
     .category-content {
         grid-template-columns: 1fr;
@@ -254,12 +257,13 @@
         gap: 15px;
     }
 
-    .products-grid {
-        grid-template-columns: 1fr; /* 👈 UN SOLO PRODUCTO */
+    .products-grid,
+    .products-grid.filters-hidden {
+        grid-template-columns: 1fr; /* SIEMPRE 1 EN MÓVIL */
     }
 
     .product-card img {
-        height: 220px; /* un poco más grande para lucir mejor */
+        height: 220px;
     }
 
     .search-container input {
@@ -267,9 +271,8 @@
     }
 }
 
-
 /* ===============================
-   FIX LOGO COLOR (NLZ)
+   LOGO
 ================================ */
 .logo a {
     text-decoration: none;
@@ -277,7 +280,6 @@
 
 .logo-text {
     color: #000 !important;
-    text-decoration: none !important;
 }
 
 .logo-text:hover {
@@ -285,7 +287,7 @@
 }
 
 /* ===============================
-   MENU ACTIVO - HOMBRE
+   NAV ACTIVO
 ================================ */
 .nav-links a {
     color: #555;
@@ -294,7 +296,6 @@
     position: relative;
 }
 
-.nav-links a[href="#"]:nth-child(2),
 .nav-links li:nth-child(2) a {
     color: #000;
     font-weight: 700;
@@ -310,22 +311,34 @@
     background: #000;
     border-radius: 2px;
 }
-
 /* ===============================
-   CATEGORÍAS – ESTILO NLZ
+   FIX ESTILO FILTROS (BOTONES = TENIS)
 ================================ */
-.filters-sidebar ul li a {
-    color: #000;
-    text-decoration: none;
+
+/* Botones de filtros (Playeras y tops) */
+.filter-btn-item {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
     font-size: 14px;
     font-weight: 400;
-    transition: color 0.2s ease;
+    font-family: inherit;
+    color: #000;
+    text-align: left;
+
+    transition: all 0.2s ease;
 }
 
-.filters-sidebar ul li a:hover {
+/* Hover igual que tenis */
+.filter-btn-item:hover {
+    font-weight: 600;
     color: #111;
 }
 
-.filters-sidebar ul li a:visited {
+/* Estado activo (cuando se selecciona) */
+.filter-btn-item.active {
+    font-weight: 700;
     color: #000;
 }

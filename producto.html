@@ -22,19 +22,11 @@
                 </a>
             <ul class="nav-links">
                 <li><a href="index.html">Lo Nuevo</a></li>
-                <li><a href="#">Hombre</a></li>
-                <li><a href="#">Mujer</a></li>
-                <li><a href="#">Niños</a></li>
-                <li><a href="#">Ofertas</a></li>
+                <li><a href="ropa-hombre.html">Hombre</a></li>
+                <li><a href="ropa-mujer.html">Mujer</a></li>
+                <li><a href="ropa-niños.html">Niños</a></li>
+                <li><a href="tenis.html">SNKRS</a></li>
             </ul>
-            <div class="nav-icons">
-                <div class="search-container">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Buscar">
-                </div>
-                <i class="fa-regular fa-heart icon-btn"></i>
-                <i class="fa-solid fa-bag-shopping icon-btn"></i>
-            </div>
         </nav>
     </header>
 
@@ -72,29 +64,34 @@
 
                     <!-- Selección de Talla -->
                     <div class="size-selector">
-                        <h3>Selecciona tu talla</h3>
+                        <h3>Tallas disponibles</h3>
                         <a href="#" class="size-guide-link">Guía de tallas</a>
                         <div class="size-buttons" id="sizeButtons">
                             <!-- Los botones de talla se cargarán dinámicamente con JS -->
                         </div>
                     </div>
 
-                    <!-- Botones de Acción -->
-                    <button class="btn-black" id="addToCartBtn">Agregar a la bolsa de compra</button>
-                    <button class="btn-white" id="favoriteBtn">
-                        <i class="far fa-heart"></i> Favoritos
-                    </button>
-
-                    <!-- Información de Envío -->
-                    <div class="shipping-info">
-                        <h4>Envío gratuito*</h4>
-                        <p>Para obtener información de envío precisa <a href="#">Editar ubicación</a></p>
-                    </div>
-
                     <!-- Descripción del Producto -->
                     <div class="product-description" id="productDescription">
                         <p>Descripción del producto...</p>
                     </div>
+
+                    <!-- BOTÓN DE APARTAR (NUEVO) -->
+                    <div class="reserve-section">
+                        <button class="reserve-btn" id="reserveBtn">
+                            <i class="fas fa-shopping-bag"></i> Apartar producto
+                        </button>
+                        <p class="reserve-note">
+                            <i class="fas fa-info-circle"></i>
+                            Al hacer clic, serás dirigido a WhatsApp para confirmar disponibilidad
+                        </p>
+                    </div>
+
+                    <!-- Botones adicionales para compatibilidad -->
+                    <button class="btn-black" id="addToCartBtn" style="display: none;">Añadir a la bolsa</button>
+                    <button class="btn-white" id="favoriteBtn" style="display: none;">
+                        <i class="far fa-heart"></i> Añadir a favoritos
+                    </button>
                 </div>
             </div>
         </div>
@@ -111,9 +108,6 @@
                     </div>
                     <a href="#">Términos de Uso</a>
                     <a href="#">Términos de Venta</a>
-                    <a href="#">Detalles de la Empresa</a>
-                    <a href="#">Política de Privacidad y Cookies</a>
-                    <a href="#">Configuración de Privacidad y Cookies</a>
                 </div>
             </div>
         </div>

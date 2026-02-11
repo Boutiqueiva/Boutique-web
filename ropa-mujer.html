@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa para Mujer </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ropa-mujer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="main-header" id="smartHeader">
+        <nav class="navbar container-limit">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-text">NLZ</div>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Lo Nuevo</a></li>
+                <li><a href="ropa-hombre.html">Hombre</a></li>
+                <li><a href="ropa-mujer.html">Mujer</a></li>
+                <li><a href="ropa-niños.html">Niños</a></li>
+                <li><a href="tenis.html">SNKRS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="category-page">
+        <div class="container-limit">
+            <div class="category-header">
+                <h1 id="category-title">Ropa para Mujer (<span id="product-count">0</span>)</h1>
+                <div class="category-actions">
+                    <button class="filter-btn">Ocultar filtros</button>
+                </div>
+            </div>
+
+            <!-- Filtros Laterales -->
+            <div class="category-content">
+                <aside class="filters-sidebar">
+                    <div class="filter-group">
+                        <h3>Playeras y tops</h3>
+                        <ul class="filter-list">
+                            <li><button class="filter-btn-item" data-filter="all">Todos</button></li>
+                            <li><button class="filter-btn-item" data-filter="jersey">Jerseys</button></li>
+                            <li><button class="filter-btn-item" data-filter="pantalon-mezclilla">Pantalones
+                                    mezclilla</button></li>
+                            <li><button class="filter-btn-item" data-filter="pantalon-vestir">Pantalones vestir</button>
+                            </li>
+                            <li><button class="filter-btn-item" data-filter="shorts">Shorts</button></li>
+                            <li><button class="filter-btn-item" data-filter="conjunto">Conjuntos</button></li>
+                            <li><button class="filter-btn-item" data-filter="playera">Playeras</button></li>
+                            <li><button class="filter-btn-item" data-filter="tenis">Tenis</button></li>
+                            <li><button class="filter-btn-item" data-filter="pans">Pans</button></li>
+                            <li><button class="filter-btn-item" data-filter="chamarra">Chamarras</button></li>
+                            <li><button class="filter-btn-item" data-filter="sueter">Sueteres</button></li>
+                            <li><button class="filter-btn-item" data-filter="otros">Otros</button></li>
+                        </ul>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Talla</h3>
+                        <select class="filter-select" data-filter-type="size">
+                            <option value="all">Todas</option>
+                            <option value="cm25">CM 25</option>
+                            <option value="cm25.5">CM 25.5</option>
+                            <option value="cm26">CM 26</option>
+                            <!-- Agrega más si lo deseas -->
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Color</h3>
+                        <select class="filter-select" data-filter-type="color">
+                            <option value="all">Todos</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="negro">Negro</option>
+                            <option value="rojo">Rojo</option>
+                            <option value="azul">Azul</option>
+                        </select>
+                    </div>
+                </aside>
+
+                <!-- Productos -->
+                <section class="products-grid">
+                    <a href="producto.html?id=Retro High OG" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis3/7.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air Jordan 1 Retro High OG</h4>
+                                <p>Jordan</p>
+                                <p class="p-price">$3,800</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=pantalon-blanco-mujer" class="product-link">
+                        <div class="product-card" data-category="pantalon-vestir">
+                            <img src="src/imagenes/Ropa/Pantalon vestir/Blanco/1.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Pantalon de vestir Blanco</h4>
+                                <p>Vestir</p>
+                                <p class="p-price">$280</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=pantalon-mezclilla-mujer1" class="product-link">
+                        <div class="product-card" data-category="pantalon-mezclilla">
+                            <img src="src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 11/18.svg" alt="Wrangler">
+                            <div class="product-info">
+                                <h4>Jeans de mezclilla Wrangler negros</h4>
+                                <p>Wrangler</p>
+                                <p class="p-price">$350</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=pantalon-mezclilla-mujer2" class="product-link">
+                        <div class="product-card" data-category="pantalon-mezclilla">
+                            <img src="src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 12/21.svg" alt="Wrangler">
+                            <div class="product-info">
+                                <h4>Jeans de mezclilla Wrangler azul</h4>
+                                <p>Wrangler</p>
+                                <p class="p-price">$350</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=pantalon-mezclilla-mujer3" class="product-link">
+                        <div class="product-card" data-category="pantalon-mezclilla">
+                            <img src="src/imagenes/Ropa/Pantalon Mezclilla/Pantalon 14/26.svg" alt="levis">
+                            <div class="product-info">
+                                <h4>Jeans de mezclilla Levi's</h4>
+                                <p>Levi's</p>
+                                <p class="p-price">$350</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Low-07 Next" class="product-link">
+                        <div class="product-card" data-category="Tenis">
+                            <img src="src/imagenes/Tenis/Tenis9/27.svg">
+                            <div class="product-info">
+                                <h4>Nike Tenis Air Force 1 Low '07 Next Nature/Aster Pink</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$2,200</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Red Stardust" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis19/55.svg">
+                            <div class="product-info">
+                                <h4>Nike Tenis Dunk Low "Red Stardust"</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,950</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=nike-07 SE Black" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis39/43.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Air Force 1 '07 SE Black</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$2,200</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Manoa" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis50/25.svg" alt="Nike Air">
+                            <div class="product-info">
+                                <h4>Nike Manoa</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,400</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Minnie Mouse" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis142/1.svg" alt="Minnie Mouse">
+                            <div class="product-info">
+                                <h4>Disney Minnie Mouse</h4>
+                                <p>Disney</p>
+                                <p class="p-price">$950</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Skool Vintage Floral" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis143/4.svg" alt="Skool Vintage Florale">
+                            <div class="product-info">
+                                <h4>Vans Old Skool Vintage Floral</h4>
+                                <p>Vans</p>
+                                <p class="p-price">$1,100</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Air Force 1 rosa" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis144/7.svg" alt="Air Force 1">
+                            <div class="product-info">
+                                <h4>Nike Air Force 1 '07 SE</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$2,100</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Stan Smith Cloud White Leopard" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis145/10.svg" alt="Stan Smith Cloud White Leopard">
+                            <div class="product-info">
+                                <h4>Adidas Stan Smith Cloud White Leopard</h4>
+                                <p>Adidas</p>
+                                <p class="p-price">$1,400</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Women Lace Up" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis146/13.svg" alt="Women Lace Up">
+                            <div class="product-info">
+                                <h4>RBX Women Lace Up</h4>
+                                <p>RBX</p>
+                                <p class="p-price">$950</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Reebok Energen Tech Plus" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis147/16.svg" alt="Reebok Energen Tech Plus">
+                            <div class="product-info">
+                                <h4>running Reebok Energen Tech Plus</h4>
+                                <p>Reebok</p>
+                                <p class="p-price">$1,500</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Max INTRLK Lite color white" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis148/19.svg" alt="Max INTRLK Lite color white">
+                            <div class="product-info">
+                                <h4>Nike Air Max INTRLK Lite color white</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,700</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Run Star Hike" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis149/23.svg" alt="Run Star Hike">
+                            <div class="product-info">
+                                <h4>Converse Run Star Hike</h4>
+                                <p>Converse</p>
+                                <p class="p-price">$1,600</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Chuck Taylor" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis150/25.svg" alt="Chuck Taylor">
+                            <div class="product-info">
+                                <h4>Converse Chuck Taylor All Star</h4>
+                                <p>Converse</p>
+                                <p class="p-price">$1,200</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Taylor All Star Gold" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis151/28.svg" alt="Taylor All Star Gold">
+                            <div class="product-info">
+                                <h4>Converse Chuck Taylor All Star Gold</h4>
+                                <p>Converse</p>
+                                <p class="p-price">$1,200</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Balance 373" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis152/31.svg" alt="Balance 373">
+                            <div class="product-info">
+                                <h4>New Balance 373 Bungee Lace</h4>
+                                <p>New Balance</p>
+                                <p class="p-price">$1,400</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Anzarun Lite" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis153/34.svg" alt="Anzarun Lite">
+                            <div class="product-info">
+                                <h4>Puma Anzarun Lite</h4>
+                                <p>Puma</p>
+                                <p class="p-price">$1,100</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Adidas Stan Smith Bonega" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis154/37.svg" alt="Adidas Stan Smith Bonega">
+                            <div class="product-info">
+                                <h4>Adidas Stan Smith Bonega</h4>
+                                <p>Adidas</p>
+                                <p class="p-price">$1,900</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Run 60s" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis155/40.svg" alt="Run 60s">
+                            <div class="product-info">
+                                <h4>Adidas Run 60s 2.0</h4>
+                                <p>Adidas</p>
+                                <p class="p-price">$1,300</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Rivalry Lux Low" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis156/43.svg" alt="Rivalry Lux Low">
+                            <div class="product-info">
+                                <h4>Adidas Rivalry Lux Low</h4>
+                                <p>Adidas</p>
+                                <p class="p-price">$1,500</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Quest 5" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis157/46.svg" alt="Quest 5">
+                            <div class="product-info">
+                                <h4>Nike Quest 5</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,700</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Chuck Taylor All Star OX" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis158/49.svg" alt="Chuck Taylor All Star OX">
+                            <div class="product-info">
+                                <h4>Converse Chuck Taylor All Star OX</h4>
+                                <p>Converse</p>
+                                <p class="p-price">$1,200</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Utility Dimension Grey Purple" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis159/52.svg" alt="Utility Dimension 'Grey Purple'">
+                            <div class="product-info">
+                                <h4>Puma Utility Dimension 'Grey Purple'</h4>
+                                <p>Puma</p>
+                                <p class="p-price">$1,300</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Royale blancos con crema" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis160/55.svg" alt="Royale blancos con crema">
+                            <div class="product-info">
+                                <h4>Nike Court Royale</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,300</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=AF1 Lover XX" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis161/58.svg" alt="AF1 Lover XX">
+                            <div class="product-info">
+                                <h4>Nike AF1 Lover XX</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,900</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Ember Trail black" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis162/61.svg" alt="Ember Trail">
+                            <div class="product-info">
+                                <h4>Puma Ember Trail</h4>
+                                <p>Puma</p>
+                                <p class="p-price">$1,300</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Flyer Runner" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis163/65.svg" alt="Flyer Runner">
+                            <div class="product-info">
+                                <h4>Puma Flyer Runner</h4>
+                                <p>Puma</p>
+                                <p class="p-price">$1,250</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Revolution 7 white Mujer" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis164/68.svg" alt="Revolution 7 white">
+                            <div class="product-info">
+                                <h4>Nike Revolution 7 white</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,600</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Nike Court Legacy swoosh amarillo" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis165/71.svg" alt="Nike Court Legacy">
+                            <div class="product-info">
+                                <h4>Nike Court Legacy</h4>
+                                <p>Vans</p>
+                                <p class="p-price">$1,200</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Rejuven8 slide" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis166/74.svg" alt="Rejuven8 slide">
+                            <div class="product-info">
+                                <h4>Nike ReactX Rejuven8 slide in Summit White. </h4>
+                                <p>Nike</p>
+                                <p class="p-price">$950</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Classic Slip-On" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis167/77.svg" alt="Classic Slip-On">
+                            <div class="product-info">
+                                <h4>Vans Classic Slip-On</h4>
+                                <p>Vans</p>
+                                <p class="p-price">$950</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Caven 2.0 en colores pastel" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis168/80.svg" alt="Caven 2.0 en colores pastel">
+                            <div class="product-info">
+                                <h4>Puma Caven 2.0 en colores pastel</h4>
+                                <p>Puma</p>
+                                <p class="p-price">$1,300</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=NY 90" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis169/83.svg" alt="NY 90">
+                            <div class="product-info">
+                                <h4>Adidas NY 90</h4>
+                                <p>Adidas</p>
+                                <p class="p-price">$1,400</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Stan Smith de gamuza" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis170/86.svg" alt="Stan Smith de gamuza">
+                            <div class="product-info">
+                                <h4>Adidas Stan Smith de gamuza</h4>
+                                <p>Adidas</p>
+                                <p class="p-price">$1,300</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=DynaSoft Reveal" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis171/89.svg" alt="DynaSoft Reveal">
+                            <div class="product-info">
+                                <h4>running New Balance DynaSoft Reveal v4 BOA</h4>
+                                <p>New Balance</p>
+                                <p class="p-price">$1,500</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Game Royal/White" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis172/92.svg" alt="Game Royal/White">
+                            <div class="product-info">
+                                <h4>Nike Pacific</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,500</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Royale AC flash crimson" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis173/95.svg" alt="Royale AC flash crimson">
+                            <div class="product-info">
+                                <h4>Nike Court Royale AC</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,300</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Advantage 2.0 lima" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis175/101.svg" alt="Advantage 2.0 lima">
+                            <div class="product-info">
+                                <h4>Adidas Advantage 2.0 lima</h4>
+                                <p>Adidas</p>
+                                <p class="p-price">$1,100</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Asher sin cordones" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis176/104.svg" alt="Asher sin cordones ">
+                            <div class="product-info">
+                                <h4>Vans Asher</h4>
+                                <p>Vans</p>
+                                <p class="p-price">$850</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Hustle D 11" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis177/107.svg" alt="Hustle D 11">
+                            <div class="product-info">
+                                <h4>Nike Team Hustle D 11</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,200</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Quest 5 platinum" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis178/110.svg" alt="Quest 5 platinum">
+                            <div class="product-info">
+                                <h4>Nike Quest 5 platinum</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,600</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Star Runner 3" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis179/113.svg" alt="Star Runner 3">
+                            <div class="product-info">
+                                <h4>Nike Star Runner 3</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,100</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Blktop Rider" class="product-link">
+                        <div class="product-card" data-category="tenis"> <img src="src/imagenes/Tenis/Tenis180/116.svg"
+                                alt="Blktop Rider">
+                            <div class="product-info">
+                                <h4>Puma Blktop Rider</h4>
+                                <p>Puma</p>
+                                <p class="p-price">$1,900</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Pacific pink/violet" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis181/119.svg" alt="Pacific pink/violet">
+                            <div class="product-info">
+                                <h4>Nike Pacific pink/violet</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,500</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Breaknet 2.0 lifestyle court" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis182/122.svg" alt="Breaknet 2.0 lifestyle court">
+                            <div class="product-info">
+                                <h4>Adidas Breaknet 2.0 lifestyle court</h4>
+                                <p>Adidas</p>
+                                <p class="p-price">$1,200</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Quest 6 white" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis183/125.svg" alt="Quest 6">
+                            <div class="product-info">
+                                <h4>Nike Quest 6</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,700</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Field General" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis184/127.svg" alt="Field General">
+                            <div class="product-info">
+                                <h4>Nike Field General</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,500</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Revolution 7 pink/coral" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis185/130.svg" alt="Revolution 7 pink/coral">
+                            <div class="product-info">
+                                <h4>Nike Revolution 7 </h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,700</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Madden Protégé" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis186/133.svg" alt="Madden Protégé">
+                            <div class="product-info">
+                                <h4>Steve Madden Protégé</h4>
+                                <p>Steve Madden</p>
+                                <p class="p-price">$600</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Hex Slide" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis187/136.svg" alt="Hex Slide">
+                            <div class="product-info">
+                                <h4>Jordan Hex Slide</h4>
+                                <p>Jordan</p>
+                                <p class="p-price">$700</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Glide D" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis188/138.svg" alt="Glide D">
+                            <div class="product-info">
+                                <h4>Levi's Glide D L1124221</h4>
+                                <p>Levi's</p>
+                                <p class="p-price">$850</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Kosmo Rider" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis189/141.svg" alt="Kosmo Rider">
+                            <div class="product-info">
+                                <h4>Puma Kosmo Rider Sorbet</h4>
+                                <p>Puma</p>
+                                <p class="p-price">$1,500</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Pacific running Beige" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis190/144.svg" alt="Pacific running Beige">
+                            <div class="product-info">
+                                <h4>Nike Pacific running Beige</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,500</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Superstar white" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis191/147.svg" alt="Superstar">
+                            <div class="product-info">
+                                <h4>Adidas Superstar</h4>
+                                <p>Adidas</p>
+                                <p class="p-price">$1,400</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Duramo SL" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis192/150.svg" alt="Duramo SL">
+                            <div class="product-info">
+                                <h4>Adidas Duramo SL</h4>
+                                <p>Adidas</p>
+                                <p class="p-price">$1,250</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Nizza Platform" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis193/153.svg" alt="Nizza Platform">
+                            <div class="product-info">
+                                <h4>Adidas Nizza Platform</h4>
+                                <p>Adidas</p>
+                                <p class="p-price">$1,100</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Air Zoom Pegasus 39" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis196/7.svg" alt="Air Zoom Pegasus 39">
+                            <div class="product-info">
+                                <h4>Nike Air Zoom Pegasus 39</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,400</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Rickie Jr rosa" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis197/10.svg" alt="Rickie Jr rosa">
+                            <div class="product-info">
+                                <h4>Puma Rickie Jr.</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,200</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Samba" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis199/16.svg" alt="Samba">
+                            <div class="product-info">
+                                <h4>Adidas Samba Og</h4>
+                                <p>Adidas</p>
+                                <p class="p-price">$1,200</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Dearfoams" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis200/19.svg" alt="Dearfoams">
+                            <div class="product-info">
+                                <h4>pantufla de felpa</h4>
+                                <p>Dearfoams</p>
+                                <p class="p-price">$380</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Benassi" class="product-link">
+                        <div class="product-card"  data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis201/23.svg" alt="Benassi">
+                            <div class="product-info">
+                                <h4>Nike Benassi</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$700</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Solay Thong" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis202/24.svg" alt="Solay Thong">
+                            <div class="product-info">
+                                <h4>Nike Solay Thong</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$450</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Air Force 1 LEB" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis209/43.svg" alt="Air Force 1 LE">
+                            <div class="product-info">
+                                <h4>Nike Air Force 1 LE</h4>
+                                <p>Nike</p>
+                                <p class="p-price">$1,800</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="producto.html?id=Flar" class="product-link">
+                        <div class="product-card" data-category="tenis">
+                            <img src="src/imagenes/Tenis/Tenis217/67.svg" alt="Flar">
+                            <div class="product-info">
+                                <h4>Jordan Flare</h4>
+                                <p>Jordan</p>
+                                <p class="p-price">$550</p>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-limit">
+            <div class="footer-bottom">
+                <p>© 2026 Boutique, NLZ. Todos los derechos reservados</p>
+                <div class="footer-menu">
+                    <div class="dropdown">
+                        <span>Guías ▾</span>
+                    </div>
+                    <a href="#">Términos de Uso</a>
+                    <a href="#">Términos de Venta</a>
+                    <a href="#">Detalles de la Empresa</a>
+                    <a href="#">Política de Privacidad y Cookies</a>
+                    <a href="#">Configuración de Privacidad y Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ropa-hombre.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const productCards = document.querySelectorAll('.product-card');
+            const filterButtons = document.querySelectorAll('.filter-btn-item');
+            const productCountElement = document.getElementById('product-count');
+
+            // Función para actualizar el contador
+            function updateProductCount(count) {
+                productCountElement.textContent = count;
+            }
+
+            // Función para filtrar productos
+            function filterProducts(category) {
+                let visibleCount = 0;
+
+                productCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.closest('.product-link').style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        card.closest('.product-link').style.display = 'none';
+                    }
+                });
+
+                updateProductCount(visibleCount);
+            }
+
+            // Evento para los botones de filtro
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const filterValue = this.dataset.filter;
+                    filterProducts(filterValue);
+                });
+            });
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const filterValue = this.dataset.filter;
+                    filterProducts(filterValue);
+                });
+            });
+
+
+            // Inicializar con todos los productos visibles
+            filterProducts('all');
+        });
+    </script>
+</body>
+
+
+</html>
