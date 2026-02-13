@@ -3484,9 +3484,6 @@ Me interesa apartar este producto:
 💰 Precio: ${currentProduct.precio}
 📏 ${sizeText}
 
-🖼 Imagen:
-${currentImage}
-
 🔗 Enlace del producto:
 ${window.location.href}
 
@@ -3537,4 +3534,5 @@ function initPage() {
 }
 
 document.addEventListener('DOMContentLoaded', initPage);
+
 
