@@ -3266,6 +3266,15 @@ function getProductIdFromUrl() {
     return urlParams.get('id');
 }
 
+// ===============================
+// ⚠️ CAMBIA ESTO POR TU USUARIO REAL
+// ===============================
+const GITHUB_USER = "TU_USUARIO";
+const GITHUB_REPO = "Boutique-web";
+const GITHUB_BRANCH = "main";
+
+const githubBase = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/`;
+
 // Número de WhatsApp
 const whatsappNumber = "522221733376";
 
@@ -3352,17 +3361,23 @@ function loadProductData(productId) {
 }
 
 // ===============================
-// CORREGIR RUTA DE IMAGEN
+// CONVERTIR RUTA LOCAL A GITHUB RAW
 // ===============================
 function correctImagePath(imgPath) {
     if (!imgPath) return "";
 
-    // Si ya es RAW de GitHub o URL completa
+    // Si ya es URL completa, la dejamos igual
     if (imgPath.startsWith("http")) {
         return imgPath;
     }
 
-    return imgPath;
+    // Si empieza con src/
+    if (imgPath.startsWith("src/")) {
+        return githubBase + imgPath;
+    }
+
+    // Si solo viene ropa/... o tenis/...
+    return githubBase + "src/" + imgPath;
 }
 
 // ===============================
@@ -3375,8 +3390,6 @@ function updateMainImage(imgSrc, index) {
 }
 
 // ===============================
-// MINIATURA ACTIVA
-// ===============================
 function setActiveThumbnail(index) {
     const thumbnails = document.querySelectorAll('#thumbnailGallery img');
     thumbnails.forEach((thumb, i) => {
@@ -3384,8 +3397,6 @@ function setActiveThumbnail(index) {
     });
 }
 
-// ===============================
-// FLECHAS DE NAVEGACIÓN
 // ===============================
 function initImageNavigation(images) {
     const prevBtn = document.getElementById('prevImageBtn');
@@ -3421,7 +3432,7 @@ function initImageNavigation(images) {
 }
 
 // ===============================
-// BOTÓN RESERVAR WHATSAPP
+// WHATSAPP CON IMAGEN ACTUAL
 // ===============================
 function initReserveButton() {
     const reserveBtn = document.getElementById('reserveBtn');
@@ -3453,7 +3464,6 @@ function updateReserveButton() {
     }
 }
 
-// 🔥 FUNCIÓN CORREGIDA PARA ENVIAR IMAGEN ACTUAL
 function generateWhatsAppLink() {
     if (!currentProduct) return "#";
 
@@ -3461,8 +3471,9 @@ function generateWhatsAppLink() {
         ? `Talla: ${selectedSize}`
         : "Talla única";
 
-    const currentImage = currentProduct.imagenes[currentImageIndex];
-    const imageUrl = correctImagePath(currentImage);
+    const currentImage = correctImagePath(
+        currentProduct.imagenes[currentImageIndex]
+    );
 
     const message = `¡Hola! 😊
 
@@ -3474,7 +3485,7 @@ Me interesa apartar este producto:
 📏 ${sizeText}
 
 🖼 Imagen:
-${imageUrl}
+${currentImage}
 
 🔗 Enlace del producto:
 ${window.location.href}
@@ -3484,8 +3495,6 @@ ${window.location.href}
     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 }
 
-// ===============================
-// FAVORITOS
 // ===============================
 function initFavoriteButton() {
     const favoriteBtn = document.getElementById('favoriteBtn');
@@ -3503,8 +3512,6 @@ function initFavoriteButton() {
 }
 
 // ===============================
-// ADD TO CART
-// ===============================
 function initAddToCartButton() {
     const addToCartBtn = document.getElementById('addToCartBtn');
     if (!addToCartBtn) return;
@@ -3514,8 +3521,6 @@ function initAddToCartButton() {
     });
 }
 
-// ===============================
-// INICIALIZAR PÁGINA
 // ===============================
 function initPage() {
     const productId = getProductIdFromUrl();
@@ -3532,3 +3537,4 @@ function initPage() {
 }
 
 document.addEventListener('DOMContentLoaded', initPage);
+
