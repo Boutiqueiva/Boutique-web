@@ -3266,15 +3266,6 @@ function getProductIdFromUrl() {
     return urlParams.get('id');
 }
 
-// ===============================
-// ⚠️ CAMBIA ESTO POR TU USUARIO REAL
-// ===============================
-const GITHUB_USER = "TU_USUARIO";
-const GITHUB_REPO = "Boutique-web";
-const GITHUB_BRANCH = "main";
-
-const githubBase = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/`;
-
 // Número de WhatsApp
 const whatsappNumber = "522221733376";
 
@@ -3282,6 +3273,32 @@ const whatsappNumber = "522221733376";
 let currentProduct = null;
 let currentImageIndex = 0;
 let selectedSize = "";
+
+// ===============================
+// CORREGIR RUTA DE IMAGEN - VERSIÓN CORREGIDA PARA GITHUB PAGES
+// ===============================
+function correctImagePath(imgPath) {
+    if (!imgPath) return "";
+    
+    // Si ya es una URL completa, la dejamos como está
+    if (imgPath.startsWith("http://") || imgPath.startsWith("https://")) {
+        return imgPath;
+    }
+    
+    // Obtener la URL base del sitio (para GitHub Pages)
+    const baseUrl = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '/');
+    
+    // Limpiar la ruta (eliminar './' si existe)
+    let cleanPath = imgPath.replace(/^\.\//, '');
+    
+    // Si la ruta ya empieza con 'src/', la usamos directamente
+    if (cleanPath.startsWith('src/')) {
+        return baseUrl + cleanPath;
+    }
+    
+    // Si no, asumimos que está en src/imagenes/
+    return baseUrl + 'src/imagenes/' + cleanPath;
+}
 
 // ===============================
 // CARGAR PRODUCTO
@@ -3311,12 +3328,13 @@ function loadProductData(productId) {
 
     product.imagenes.forEach((imgSrc, index) => {
         const imgElement = document.createElement('img');
-
-        imgElement.src = correctImagePath(imgSrc);
+        const correctedSrc = correctImagePath(imgSrc);
+        console.log('Miniatura cargada:', correctedSrc); // Para depuración
+        imgElement.src = correctedSrc;
         imgElement.alt = `${product.nombre} - Vista ${index + 1}`;
 
         imgElement.addEventListener('click', () => {
-            updateMainImage(imgElement.src, index);
+            updateMainImage(correctedSrc, index);
             setActiveThumbnail(index);
         });
 
@@ -3326,7 +3344,9 @@ function loadProductData(productId) {
     // Imagen principal inicial
     if (product.imagenes.length > 0) {
         const mainImg = document.getElementById('mainProductImage');
-        mainImg.src = correctImagePath(product.imagenes[0]);
+        const correctedMainSrc = correctImagePath(product.imagenes[0]);
+        console.log('Imagen principal cargada:', correctedMainSrc); // Para depuración
+        mainImg.src = correctedMainSrc;
     }
 
     setActiveThumbnail(0);
@@ -3351,6 +3371,12 @@ function loadProductData(productId) {
 
             sizeButtonsContainer.appendChild(btn);
         });
+        
+        // Seleccionar primera talla por defecto
+        setTimeout(() => {
+            const firstBtn = sizeButtonsContainer.querySelector('button');
+            if (firstBtn) firstBtn.click();
+        }, 100);
     } else {
         sizeButtonsContainer.innerHTML = '<p class="no-sizes">Talla única</p>';
         selectedSize = "Única";
@@ -3358,26 +3384,6 @@ function loadProductData(productId) {
 
     updateReserveButton();
     initImageNavigation(product.imagenes);
-}
-
-// ===============================
-// CONVERTIR RUTA LOCAL A GITHUB RAW
-// ===============================
-function correctImagePath(imgPath) {
-    if (!imgPath) return "";
-
-    // Si ya es URL completa, la dejamos igual
-    if (imgPath.startsWith("http")) {
-        return imgPath;
-    }
-
-    // Si empieza con src/
-    if (imgPath.startsWith("src/")) {
-        return githubBase + imgPath;
-    }
-
-    // Si solo viene ropa/... o tenis/...
-    return githubBase + "src/" + imgPath;
 }
 
 // ===============================
@@ -3390,6 +3396,8 @@ function updateMainImage(imgSrc, index) {
 }
 
 // ===============================
+// MINIATURA ACTIVA
+// ===============================
 function setActiveThumbnail(index) {
     const thumbnails = document.querySelectorAll('#thumbnailGallery img');
     thumbnails.forEach((thumb, i) => {
@@ -3397,6 +3405,8 @@ function setActiveThumbnail(index) {
     });
 }
 
+// ===============================
+// FLECHAS DE NAVEGACIÓN
 // ===============================
 function initImageNavigation(images) {
     const prevBtn = document.getElementById('prevImageBtn');
@@ -3432,7 +3442,7 @@ function initImageNavigation(images) {
 }
 
 // ===============================
-// WHATSAPP CON IMAGEN ACTUAL
+// BOTÓN RESERVAR WHATSAPP
 // ===============================
 function initReserveButton() {
     const reserveBtn = document.getElementById('reserveBtn');
@@ -3464,6 +3474,9 @@ function updateReserveButton() {
     }
 }
 
+// ===============================
+// GENERAR ENLACE DE WHATSAPP CON IMAGEN
+// ===============================
 function generateWhatsAppLink() {
     if (!currentProduct) return "#";
 
@@ -3471,27 +3484,40 @@ function generateWhatsAppLink() {
         ? `Talla: ${selectedSize}`
         : "Talla única";
 
-    const currentImage = correctImagePath(
-        currentProduct.imagenes[currentImageIndex]
-    );
+    // Obtener la imagen actual
+    const currentImage = currentProduct.imagenes[currentImageIndex] || currentProduct.imagenes[0];
+    const imageUrl = correctImagePath(currentImage);
+    
+    // Acortar la descripción si es muy larga
+    const shortDescription = currentProduct.descripcion.length > 100 
+        ? currentProduct.descripcion.substring(0, 100) + '...' 
+        : currentProduct.descripcion;
 
     const message = `¡Hola! 😊
 
-Me interesa apartar este producto:
+*Me interesa apartar este producto:*
 
-*${currentProduct.nombre}*
-📌 Categoría: ${currentProduct.categoria}
-💰 Precio: ${currentProduct.precio}
-📏 ${sizeText}
+📌 *${currentProduct.nombre}*
+🏷️ *Categoría:* ${currentProduct.categoria}
+💰 *Precio:* ${currentProduct.precio}
+📏 *${sizeText}*
 
-🔗 Enlace del producto:
+📝 *Descripción:*
+${shortDescription}
+
+🖼️ *Ver imagen del producto:*
+${imageUrl}
+
+🔗 *Enlace del producto:*
 ${window.location.href}
 
-¿Está disponible?`;
+¿Está disponible? ¡Gracias!`;
 
     return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 }
 
+// ===============================
+// FAVORITOS
 // ===============================
 function initFavoriteButton() {
     const favoriteBtn = document.getElementById('favoriteBtn');
@@ -3509,6 +3535,8 @@ function initFavoriteButton() {
 }
 
 // ===============================
+// ADD TO CART
+// ===============================
 function initAddToCartButton() {
     const addToCartBtn = document.getElementById('addToCartBtn');
     if (!addToCartBtn) return;
@@ -3519,8 +3547,11 @@ function initAddToCartButton() {
 }
 
 // ===============================
+// INICIALIZAR PÁGINA
+// ===============================
 function initPage() {
     const productId = getProductIdFromUrl();
+    console.log('Product ID:', productId);
 
     if (!productId) {
         document.body.innerHTML = '<h1>Error</h1><p>No se especificó producto.</p>';
@@ -3534,5 +3565,3 @@ function initPage() {
 }
 
 document.addEventListener('DOMContentLoaded', initPage);
-
-
