@@ -3329,7 +3329,7 @@ function loadProductData(productId) {
     product.imagenes.forEach((imgSrc, index) => {
         const imgElement = document.createElement('img');
         const correctedSrc = correctImagePath(imgSrc);
-        console.log('Miniatura cargada:', correctedSrc); // Para depuración
+        console.log('Miniatura cargada:', correctedSrc);
         imgElement.src = correctedSrc;
         imgElement.alt = `${product.nombre} - Vista ${index + 1}`;
 
@@ -3345,13 +3345,13 @@ function loadProductData(productId) {
     if (product.imagenes.length > 0) {
         const mainImg = document.getElementById('mainProductImage');
         const correctedMainSrc = correctImagePath(product.imagenes[0]);
-        console.log('Imagen principal cargada:', correctedMainSrc); // Para depuración
+        console.log('Imagen principal cargada:', correctedMainSrc);
         mainImg.src = correctedMainSrc;
     }
 
     setActiveThumbnail(0);
 
-    // ===== TALLAS =====
+    // ===== TALLAS - VERSIÓN CORREGIDA =====
     const sizeButtonsContainer = document.getElementById('sizeButtons');
     sizeButtonsContainer.innerHTML = '';
 
@@ -3359,24 +3359,37 @@ function loadProductData(productId) {
         product.tallas.forEach(talla => {
             const btn = document.createElement('button');
             btn.textContent = talla;
-
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.size-buttons button')
-                    .forEach(b => b.classList.remove('selected'));
-
-                btn.classList.add('selected');
+            
+            // IMPORTANTE: Agregar el evento click ANTES de agregar al DOM
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('Click en talla:', talla);
+                
+                // Remover clase selected de todos los botones
+                document.querySelectorAll('.size-buttons button').forEach(b => {
+                    b.classList.remove('selected');
+                });
+                
+                // Agregar clase selected al botón clickeado
+                this.classList.add('selected');
                 selectedSize = talla;
+                console.log('Talla seleccionada:', selectedSize);
+                
+                // Actualizar estado del botón de reserva
                 updateReserveButton();
             });
 
             sizeButtonsContainer.appendChild(btn);
         });
         
-        // Seleccionar primera talla por defecto
+        // Seleccionar primera talla por defecto después de un breve retraso
         setTimeout(() => {
             const firstBtn = sizeButtonsContainer.querySelector('button');
-            if (firstBtn) firstBtn.click();
-        }, 100);
+            if (firstBtn) {
+                console.log('Seleccionando primera talla por defecto');
+                firstBtn.click();
+            }
+        }, 200);
     } else {
         sizeButtonsContainer.innerHTML = '<p class="no-sizes">Talla única</p>';
         selectedSize = "Única";
@@ -3412,37 +3425,29 @@ function initImageNavigation(images) {
     const prevBtn = document.getElementById('prevImageBtn');
     const nextBtn = document.getElementById('nextImageBtn');
 
-    prevBtn.onclick = () => {
-        if (!images.length) return;
+    if (prevBtn && nextBtn) {
+        prevBtn.onclick = () => {
+            if (!images.length) return;
 
-        currentImageIndex =
-            (currentImageIndex - 1 + images.length) % images.length;
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            const correctedSrc = correctImagePath(images[currentImageIndex]);
+            updateMainImage(correctedSrc, currentImageIndex);
+            setActiveThumbnail(currentImageIndex);
+        };
 
-        updateMainImage(
-            correctImagePath(images[currentImageIndex]),
-            currentImageIndex
-        );
+        nextBtn.onclick = () => {
+            if (!images.length) return;
 
-        setActiveThumbnail(currentImageIndex);
-    };
-
-    nextBtn.onclick = () => {
-        if (!images.length) return;
-
-        currentImageIndex =
-            (currentImageIndex + 1) % images.length;
-
-        updateMainImage(
-            correctImagePath(images[currentImageIndex]),
-            currentImageIndex
-        );
-
-        setActiveThumbnail(currentImageIndex);
-    };
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            const correctedSrc = correctImagePath(images[currentImageIndex]);
+            updateMainImage(correctedSrc, currentImageIndex);
+            setActiveThumbnail(currentImageIndex);
+        };
+    }
 }
 
 // ===============================
-// BOTÓN RESERVAR WHATSAPP
+// BOTÓN RESERVAR WHATSAPP - VERSIÓN CORREGIDA
 // ===============================
 function initReserveButton() {
     const reserveBtn = document.getElementById('reserveBtn');
@@ -3450,13 +3455,27 @@ function initReserveButton() {
 
     reserveBtn.addEventListener('click', function (e) {
         e.preventDefault();
+        console.log('Botón de reserva clickeado');
+        console.log('Talla seleccionada actual:', selectedSize);
+        console.log('Producto actual:', currentProduct);
 
-        if (currentProduct.tallas?.length && !selectedSize) {
-            alert('Selecciona una talla primero');
-            return;
+        // Verificar si hay tallas y si se seleccionó una
+        if (currentProduct && currentProduct.tallas && currentProduct.tallas.length > 0) {
+            if (!selectedSize) {
+                alert('⚠️ Por favor, selecciona una talla primero');
+                
+                // Hacer parpadear el selector de tallas
+                const sizeSelector = document.querySelector('.size-selector');
+                if (sizeSelector) {
+                    sizeSelector.style.animation = 'pulse 0.5s 2';
+                    setTimeout(() => sizeSelector.style.animation = '', 1000);
+                }
+                return;
+            }
         }
 
         const whatsappLink = generateWhatsAppLink();
+        console.log('Enlace de WhatsApp generado:', whatsappLink);
         window.open(whatsappLink, '_blank');
     });
 }
@@ -3465,12 +3484,18 @@ function updateReserveButton() {
     const reserveBtn = document.getElementById('reserveBtn');
     if (!reserveBtn) return;
 
-    if (currentProduct?.tallas?.length && !selectedSize) {
+    console.log('Actualizando botón de reserva - Talla seleccionada:', selectedSize);
+
+    if (currentProduct && currentProduct.tallas && currentProduct.tallas.length > 0 && !selectedSize) {
         reserveBtn.classList.add('disabled');
         reserveBtn.disabled = true;
+        reserveBtn.title = "Selecciona una talla primero";
+        console.log('Botón deshabilitado - sin talla seleccionada');
     } else {
         reserveBtn.classList.remove('disabled');
         reserveBtn.disabled = false;
+        reserveBtn.title = "Apartar producto por WhatsApp";
+        console.log('Botón habilitado');
     }
 }
 
@@ -3504,9 +3529,6 @@ function generateWhatsAppLink() {
 
 📝 *Descripción:*
 ${shortDescription}
-
-🖼️ *Ver imagen del producto:*
-${imageUrl}
 
 🔗 *Enlace del producto:*
 ${window.location.href}
@@ -3563,5 +3585,42 @@ function initPage() {
     initAddToCartButton();
     initReserveButton();
 }
+
+// Agregar estilos adicionales para los botones de talla
+const style = document.createElement('style');
+style.textContent = `
+    .size-buttons button {
+        padding: 10px 15px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        background: white;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    
+    .size-buttons button:hover {
+        background: #f0f0f0;
+    }
+    
+    .size-buttons button.selected {
+        background: #000 !important;
+        color: #fff !important;
+        border-color: #000 !important;
+    }
+    
+    .reserve-btn.disabled {
+        background-color: #ccc !important;
+        cursor: not-allowed !important;
+        opacity: 0.7;
+    }
+    
+    @keyframes pulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+    }
+`;
+document.head.appendChild(style);
 
 document.addEventListener('DOMContentLoaded', initPage);
