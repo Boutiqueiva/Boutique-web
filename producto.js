@@ -3275,28 +3275,22 @@ let currentImageIndex = 0;
 let selectedSize = "";
 
 // ===============================
-// CORREGIR RUTA DE IMAGEN - VERSIÓN CORREGIDA PARA GITHUB PAGES
+// CORREGIR RUTA DE IMAGEN
 // ===============================
 function correctImagePath(imgPath) {
     if (!imgPath) return "";
     
-    // Si ya es una URL completa, la dejamos como está
     if (imgPath.startsWith("http://") || imgPath.startsWith("https://")) {
         return imgPath;
     }
     
-    // Obtener la URL base del sitio (para GitHub Pages)
     const baseUrl = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '/');
-    
-    // Limpiar la ruta (eliminar './' si existe)
     let cleanPath = imgPath.replace(/^\.\//, '');
     
-    // Si la ruta ya empieza con 'src/', la usamos directamente
     if (cleanPath.startsWith('src/')) {
         return baseUrl + cleanPath;
     }
     
-    // Si no, asumimos que está en src/imagenes/
     return baseUrl + 'src/imagenes/' + cleanPath;
 }
 
@@ -3329,7 +3323,6 @@ function loadProductData(productId) {
     product.imagenes.forEach((imgSrc, index) => {
         const imgElement = document.createElement('img');
         const correctedSrc = correctImagePath(imgSrc);
-        console.log('Miniatura cargada:', correctedSrc);
         imgElement.src = correctedSrc;
         imgElement.alt = `${product.nombre} - Vista ${index + 1}`;
 
@@ -3341,17 +3334,15 @@ function loadProductData(productId) {
         thumbnailGallery.appendChild(imgElement);
     });
 
-    // Imagen principal inicial
     if (product.imagenes.length > 0) {
         const mainImg = document.getElementById('mainProductImage');
         const correctedMainSrc = correctImagePath(product.imagenes[0]);
-        console.log('Imagen principal cargada:', correctedMainSrc);
         mainImg.src = correctedMainSrc;
     }
 
     setActiveThumbnail(0);
 
-    // ===== TALLAS - VERSIÓN CORREGIDA =====
+    // ===== TALLAS =====
     const sizeButtonsContainer = document.getElementById('sizeButtons');
     sizeButtonsContainer.innerHTML = '';
 
@@ -3360,10 +3351,8 @@ function loadProductData(productId) {
             const btn = document.createElement('button');
             btn.textContent = talla;
             
-            // IMPORTANTE: Agregar el evento click ANTES de agregar al DOM
             btn.addEventListener('click', function(e) {
                 e.preventDefault();
-                console.log('Click en talla:', talla);
                 
                 // Remover clase selected de todos los botones
                 document.querySelectorAll('.size-buttons button').forEach(b => {
@@ -3373,7 +3362,6 @@ function loadProductData(productId) {
                 // Agregar clase selected al botón clickeado
                 this.classList.add('selected');
                 selectedSize = talla;
-                console.log('Talla seleccionada:', selectedSize);
                 
                 // Actualizar estado del botón de reserva
                 updateReserveButton();
@@ -3382,20 +3370,19 @@ function loadProductData(productId) {
             sizeButtonsContainer.appendChild(btn);
         });
         
-        // Seleccionar primera talla por defecto después de un breve retraso
+        // Seleccionar primera talla por defecto
         setTimeout(() => {
             const firstBtn = sizeButtonsContainer.querySelector('button');
             if (firstBtn) {
-                console.log('Seleccionando primera talla por defecto');
                 firstBtn.click();
             }
         }, 200);
     } else {
         sizeButtonsContainer.innerHTML = '<p class="no-sizes">Talla única</p>';
         selectedSize = "Única";
+        updateReserveButton();
     }
 
-    updateReserveButton();
     initImageNavigation(product.imagenes);
 }
 
@@ -3447,7 +3434,7 @@ function initImageNavigation(images) {
 }
 
 // ===============================
-// BOTÓN RESERVAR WHATSAPP - VERSIÓN CORREGIDA
+// BOTÓN RESERVAR WHATSAPP
 // ===============================
 function initReserveButton() {
     const reserveBtn = document.getElementById('reserveBtn');
@@ -3455,9 +3442,6 @@ function initReserveButton() {
 
     reserveBtn.addEventListener('click', function (e) {
         e.preventDefault();
-        console.log('Botón de reserva clickeado');
-        console.log('Talla seleccionada actual:', selectedSize);
-        console.log('Producto actual:', currentProduct);
 
         // Verificar si hay tallas y si se seleccionó una
         if (currentProduct && currentProduct.tallas && currentProduct.tallas.length > 0) {
@@ -3475,7 +3459,6 @@ function initReserveButton() {
         }
 
         const whatsappLink = generateWhatsAppLink();
-        console.log('Enlace de WhatsApp generado:', whatsappLink);
         window.open(whatsappLink, '_blank');
     });
 }
@@ -3484,18 +3467,21 @@ function updateReserveButton() {
     const reserveBtn = document.getElementById('reserveBtn');
     if (!reserveBtn) return;
 
-    console.log('Actualizando botón de reserva - Talla seleccionada:', selectedSize);
-
+    // Si NO hay talla seleccionada (y el producto tiene tallas)
     if (currentProduct && currentProduct.tallas && currentProduct.tallas.length > 0 && !selectedSize) {
-        reserveBtn.classList.add('disabled');
-        reserveBtn.disabled = true;
-        reserveBtn.title = "Selecciona una talla primero";
-        console.log('Botón deshabilitado - sin talla seleccionada');
-    } else {
-        reserveBtn.classList.remove('disabled');
+        // ESTADO OPACO (sin selección)
+        reserveBtn.classList.add('inactive');
+        reserveBtn.classList.remove('active');
+        reserveBtn.disabled = false; // No lo deshabilitamos, solo lo ponemos opaco
+        reserveBtn.title = "Selecciona una talla para activar";
+    } 
+    // Si HAY talla seleccionada (o producto sin tallas)
+    else {
+        // ESTADO VERDE (con selección)
+        reserveBtn.classList.add('active');
+        reserveBtn.classList.remove('inactive');
         reserveBtn.disabled = false;
         reserveBtn.title = "Apartar producto por WhatsApp";
-        console.log('Botón habilitado');
     }
 }
 
@@ -3509,11 +3495,9 @@ function generateWhatsAppLink() {
         ? `Talla: ${selectedSize}`
         : "Talla única";
 
-    // Obtener la imagen actual
     const currentImage = currentProduct.imagenes[currentImageIndex] || currentProduct.imagenes[0];
     const imageUrl = correctImagePath(currentImage);
     
-    // Acortar la descripción si es muy larga
     const shortDescription = currentProduct.descripcion.length > 100 
         ? currentProduct.descripcion.substring(0, 100) + '...' 
         : currentProduct.descripcion;
@@ -3529,6 +3513,7 @@ function generateWhatsAppLink() {
 
 📝 *Descripción:*
 ${shortDescription}
+
 
 🔗 *Enlace del producto:*
 ${window.location.href}
@@ -3573,7 +3558,6 @@ function initAddToCartButton() {
 // ===============================
 function initPage() {
     const productId = getProductIdFromUrl();
-    console.log('Product ID:', productId);
 
     if (!productId) {
         document.body.innerHTML = '<h1>Error</h1><p>No se especificó producto.</p>';
@@ -3586,9 +3570,68 @@ function initPage() {
     initReserveButton();
 }
 
-// Agregar estilos adicionales para los botones de talla
+// ===============================
+// ESTILOS PARA EL BOTÓN DE RESERVA
+// ===============================
 const style = document.createElement('style');
 style.textContent = `
+    /* Estilos base del botón */
+    .reserve-btn {
+        width: 100%;
+        padding: 16px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* ESTADO INACTIVO (OPACO) - sin talla seleccionada */
+    .reserve-btn.inactive {
+        background-color: #cccccc !important;
+        color: #666666 !important;
+        opacity: 0.7;
+        box-shadow: none;
+    }
+    
+    .reserve-btn.inactive:hover {
+        background-color: #bbbbbb !important;
+        transform: none;
+        box-shadow: none;
+    }
+    
+    /* ESTADO ACTIVO (VERDE) - con talla seleccionada */
+    .reserve-btn.active {
+        background-color: #25D366 !important;
+        color: white !important;
+        opacity: 1;
+    }
+    
+    .reserve-btn.active:hover {
+        background-color: #128C7E !important;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+    }
+    
+    .reserve-btn.active:active {
+        transform: translateY(0);
+    }
+    
+    /* Animación de pulso */
+    @keyframes pulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+    }
+    
+    /* Estilos para los botones de talla */
     .size-buttons button {
         padding: 10px 15px;
         margin: 5px;
@@ -3609,16 +3652,13 @@ style.textContent = `
         border-color: #000 !important;
     }
     
-    .reserve-btn.disabled {
-        background-color: #ccc !important;
-        cursor: not-allowed !important;
-        opacity: 0.7;
-    }
-    
-    @keyframes pulse {
-        0% { opacity: 1; }
-        50% { opacity: 0.5; }
-        100% { opacity: 1; }
+    /* Estilo para talla única */
+    .no-sizes {
+        color: #666;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+        font-style: italic;
     }
 `;
 document.head.appendChild(style);
